@@ -101,6 +101,15 @@ h1 {
   font-weight: 700;
   color: #fbd846
 }
+.title {
+  font-weight: 900;
+  font-size: 2.8rem;
+  line-height: 107%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333;
+  padding: 50px 0
+}
 .burger {
   background: 0 0;
   display: -webkit-box;
@@ -174,6 +183,12 @@ h1 {
   transition: all .3s;
   cursor: pointer;
   outline: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   border: 1px solid #fbd846;
   -webkit-filter: drop-shadow(2px 2px 4px rgba(255, 216, 111, .4));
   filter: drop-shadow(2px 2px 4px rgba(255, 216, 111, .4));
@@ -462,7 +477,98 @@ body {
   justify-content: space-between
 }
 .hero__btn {
-  height: 66px
+  height: 55px
+}
+.popular {
+  background: -webkit-gradient(linear,left top,right top,from(#ffe472),color-stop(100%,#f8cc55),to(#fbd846));
+  background: -o-linear-gradient(left,#ffe472 0,#f8cc55 100%,#fbd846 100%);
+  background: linear-gradient(90deg,#ffe472 0,#f8cc55 100%,#fbd846 100%)
+}
+.popular-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3,1fr);
+  -ms-grid-rows: (1fr)[2];
+  grid-template-rows: repeat(2,1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 20px
+}
+.popular-card {
+  background: #fff;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: color .3s;
+  -o-transition: color .3s;
+  transition: color .3s
+}
+.popular-card:hover {
+  color: #99cb38
+}
+.popular-card__text {
+  padding: 25px
+}
+.popular-card__name {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 20px;
+  min-height: 60px
+}
+.popular-card__old-price {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 20px;
+  -webkit-text-decoration-line: line-through;
+  text-decoration-line: line-through;
+  color: #b2b2b2;
+  padding: 20px 0 5px 0!important
+}
+.popular-card__new-price {
+  font-weight: 600;
+  font-size: 2.5rem;
+  line-height: 30px;
+  color: #99cb38
+}
+.popular-card__btn {
+  background: #f4f4f4;
+  border-radius: 50%;
+  border: none;
+  width: 40px;
+  height: 40px;
+  color: #99cb38;
+  font-size: 3rem;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s
+}
+.popular-card__btn:hover {
+  background: #99cb38;
+  color: #fff;
+  cursor: pointer
+}
+.popular__show-all {
+  width: 360px;
+  background: -o-linear-gradient(180.11deg,#99cb38 .07%,#c0f35b 99.89%);
+  background: linear-gradient(269.89deg,#99cb38 .07%,#c0f35b 99.89%);
+  margin: 50px auto;
+  -webkit-box-shadow: 10px 10px 20px rgba(255,216,111,.4);
+  box-shadow: 10px 10px 20px rgba(255,216,111,.4);
+  opacity: .9
+}
+.popular__show-all:hover {
+  opacity: 1
 }
 @media (min-width:480px) {
   html {
@@ -533,6 +639,10 @@ body {
   .hero__img {
     display: none
   }
+  .popular-grid {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2,1fr)
+  }
 }
 @media only screen and (max-width:480px) {
   .header-top-line__phone {
@@ -545,6 +655,13 @@ body {
     -ms-grid-rows: 20% 80%;
     grid-template-rows: 20% 80%;
     grid-row-gap: 30px
+  }
+  .popular-grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr
+  }
+  .popular-card__name {
+    font-size: 2rem
   }
 }
 @media only screen and (max-width:350px) {

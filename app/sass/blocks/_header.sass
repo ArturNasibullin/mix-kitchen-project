@@ -27,7 +27,7 @@
 			grid-area: top-line__phone
 			justify-self: center
 			@include _768
-				font-weight: $font-weight__semi-bold
+				font-weight: $font-weight--semi-bold
 				font-size: 2rem
 				display: flex
 				align-items: center
@@ -46,7 +46,7 @@
 			display: flex
 			flex-flow: row wrap
 			font-size: 1.4rem
-			font-weight: $font-weight__semi-bold
+			font-weight: $font-weight--semi-bold
 			@include _768
 				display: none
 		&-item
@@ -55,7 +55,7 @@
 			cursor: pointer
 			transition: all 0.3s
 			&:hover
-				color: $colors__green
+				color: $colors--green
 	&__btn
 		grid-area: header__btn
 		@include _768
@@ -83,19 +83,19 @@
 			align-items: center
 			justify-content: center
 			&__item
-				font-weight: $font-weight__semi-bold
+				font-weight: $font-weight--semi-bold
 				font-size: 2.4rem
 				margin: 25px 0
 		&-phone
 			display: flex
 			flex-flow: row nowrap
 			justify-content: center
-			font-weight: $font-weight__semi-bold
+			font-weight: $font-weight--semi-bold
 			font-size: 3.2rem
 		&-btn
 			margin: 40px auto
 			width: 50%
-			font-weight: $font-weight__bold
+			font-weight: $font-weight--bold
 			font-size: 2.2rem
 		&-address
 			font-size: 2rem

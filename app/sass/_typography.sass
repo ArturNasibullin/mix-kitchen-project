@@ -17,31 +17,39 @@ $normal-letter-spacing: normal
 
 $font-family__primary: 'Montserrat', sans-serif
 
-$font-weight__light: 300
-$font-weight__regular: 400
-$font-weight__semi-bold: 600
-$font-weight__bold: 700
-$font-weight__black: 900
+$font-weight--light: 300
+$font-weight--regular: 400
+$font-weight--semi-bold: 600
+$font-weight--bold: 700
+$font-weight--black: 900
 
 // Base Typographic
 //////////////////////////////////////////////////////
 h1
   font-size: 3.5rem
-  font-weight: $font-weight__black
+  font-weight: $font-weight--black
   line-height: 43px
 .text
   font-size: 1.8rem
   line-height: 24px
-  color: $colors__text
-  font-weight: $font-weight__regular
+  color: $colors--text
+  font-weight: $font-weight--regular
   &__small
     font-size: 1.4rem
     line-height: $line-height
-    font-weight: $font-weight__regular
+    font-weight: $font-weight--regular
   &__bold
     font-size: 1.6rem
     line-height: $line-height
-    font-weight: $font-weight__bold
+    font-weight: $font-weight--bold
   &__yellow
-    font-weight: $font-weight__bold
-    color: $colors__primary
+    font-weight: $font-weight--bold
+    color: $colors--primary
+.title
+  font-weight: $font-weight--black
+  font-size: 2.8rem
+  line-height: 107%
+  text-align: center
+  text-transform: uppercase
+  color: $colors--text
+  padding: 50px 0
