@@ -1,11 +1,18 @@
 .hero
-	background: url(../img/hero-bg.jpg) no-repeat center right
 	&__wrap
-		margin-top: 3px
-		padding-top: 55px
-	&__grid
-		width: 60%
-
+		display: grid
+		grid-template-columns: 65% 140%
+		max-width: 1140px
+		margin: 0 auto
+		@include _768
+			grid-template-columns: 100%
+	&__text
+		padding: 50px 30px 0 0
+	&__title
+		padding: 55px 0
+		width: 80%
+		@include _768
+			padding-bottom: 25px
 	&__subtitle
 		padding: 20px 0 70px 0
 	&-advantages
@@ -24,6 +31,8 @@
 			flex-direction: column
 			text-align: center
 			padding-left: 30px
+			img
+				margin-bottom: 15px
 		&__icon
 			margin-right: 9px
 	&__more
@@ -32,3 +41,13 @@
 		grid-template-columns: 50% 50%
 		align-items: center
 		justify-content: space-between
+		@include _480
+			grid-template-columns: 100%
+			grid-template-rows: 20% 80%
+			grid-row-gap: 30px
+
+	&__btn
+		height: 66px
+	&__img
+		@include _768
+			display: none

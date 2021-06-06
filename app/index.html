@@ -18,21 +18,21 @@
 </head>
 
 <body>
+	<div class="yellow-line"></div>
 	<header class="header">
-		<div class="header-top-line__wrap">
-			<div class="header-top-line">
-				<div class="header-top-line__address text__small">
-					<img src="img/geotag.png" class="header-top-line__img" alt="">
-					г. Нижневартовск, ул. Индустриальная, д.7 стр. 1 ТЦ “ВДНХ”, 2 этаж, бутик № 20а
-				</div>
-				<div class="header-top-line__phone text__bold">
-					<img src="img/phone-icon.png" class="header-top-line__img" alt="phone-icon">
-					<a href="tel:+7346668-598">+7 (3466) 68-15-98</a>
-				</div>
-			</div>
-		</div>
 		<div class="header__grid">
-			<img class="header__logo" src="img/logo.png" alt="">
+			<div class="header-top-line__address text__small">
+				<img src="img/geotag.png" class="header-top-line__img" alt="">
+				г. Нижневартовск, ул. Индустриальная, д.7 стр. 1 ТЦ “ВДНХ”, 2 этаж, бутик № 20а
+			</div>
+			<div class="header-top-line__phone text__bold">
+				<a href="tel:+7346668-598"><img src="img/phone-icon--yellow.svg" class="header-top-line__img" alt="phone-icon"></a>
+				<a href="tel:+7346668-598">+7 (3466) 68-15-98</a>
+			</div>
+			<img class="logo header__logo" src="img/logo.png" alt="">
+			<button class="burger header__nav-btn">
+				<span class="burger__span"></span>
+			</button>
 			<ul class="header__menu-list">
 				<li class="header__menu-item"><a href="#" class="header__menu-link">Каталог товаров</a></li>
 				<li class="header__menu-item"><a href="#" class="header__menu-link">Кухонные модули</a></li>
@@ -41,15 +41,49 @@
 				<li class="header__menu-item"><a href="#" class="header__menu-link">Готовые решения</a></li>
 				<li class="header__menu-item"><a href="#" class="header__menu-link">Контакты</a></li>
 			</ul>
-			<a href="#" class="btn modal-open">Заказать звонок</a>
+			<a href="#" class="btn btn--trans modal-open header__btn">Заказать звонок</a>
 		</div>
+		<div class="header-mobile">
+			<ul class="header-mobile-menu mobile-menu">
+				<li class="header-mobile-menu__item">
+					<a href="#" class="header-mobile-menu__link">Каталог товаров</a>
+				</li>
+				<li class="header-mobile-menu__item">
+					<a href="#" class="header-mobile-menu__link">Кухонные модули</a>
+				</li>
+				<li class="header-mobile-menu__item">
+					<a href="#" class="header-mobile-menu__link">Декоры</a>
+				</li>
+				<li class="header-mobile-menu__item">
+					<a href="#" class="header-mobile-menu__link">Фотопечать</a>
+				</li>
+				<li class="header-mobile-menu__item">
+					<a href="#" class="header-mobile-menu__link">Готовые решения</a>
+				</li>
+				<li class="header-mobile-menu__item">
+					<a href="#" class="header-mobile-menu__link">Контакты</a>
+				</li>
+			</ul>
+			<div class="header-mobile-phone">
+				<img src="img/phone-icon--yellow.svg" class="header-top-line__img" alt="phone-icon">
+				<a href="tel:+7346668-598">+7 (3466) 68-15-98</a>
+			</div>
+			<a href="#" class="btn btn--trans modal-open header-mobile-btn">Заказать звонок</a>
+			<div class="header-mobile-address">
+				<img src="img/geotag--yellow.svg" class="header-top-line__img" alt="">
+				<p>
+					г. Нижневартовск, ул. Индустриальная, д.7 стр. 1 ТЦ “ВДНХ”, <br> 2 этаж, бутик № 20а
+				</p>
+			</div>
+		</div>
+
 	</header>
 
 	<main class="hero">
 		<div class="hero__wrap">
 			<div class="container">
-				<div class="hero__grid">
-					<h1 class="hero__title">Кухни в Нижневартовске от производителя - <br><span class="text__yellow">недорого и надёжно!</span></h1>
+				<div class="hero__text">
+					<h1 class="hero__title">Кухни в Нижневартовске от производителя - <span class="text__yellow">недорого и надёжно!</span></h1>
 					<p class="hero__subtitle text">Изготовим и доставим кухонный гарнитур в Излучинск, Мегион, Стрежевой, Лангепас, Радужный и другие города ХМАО</p>
 					<ul class="hero-advantages">
 						<li class="hero-advantages__item">
@@ -81,9 +115,9 @@
 								+ гарантированный подарок при заказе кухни!</p>
 						</div>
 					</div>
-
 				</div>
 			</div>
+			<img src="img/hero-bg.png" class="hero__img" alt="">
 		</div>
 
 	</main>
