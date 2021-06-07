@@ -61,10 +61,11 @@
 		@include _768
 			display: none
 	&-mobile
+		display: none
 		visibility: hidden
 		position: absolute
 		top: 0
-		right: -100%
+		// right: -100%
 		z-index: 20
 		width: 100vw
 		height: 100vh
@@ -73,8 +74,9 @@
 		display: flex
 		flex-flow: column nowrap
 		&.active
+			display: block
 			visibility: visible
-			right: 0
+			// right: 0
 		&-menu
 			padding: 120px 20px 70px !important
 			display: flex
