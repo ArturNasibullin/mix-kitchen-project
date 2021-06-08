@@ -98,8 +98,11 @@ h1 {
   font-weight: 700
 }
 .text--yellow {
-  font-weight: 700;
+  font-weight: 900;
   color: #fbd846
+}
+.text--green {
+  color: #99cb38
 }
 .title {
   font-weight: 900;
@@ -212,14 +215,17 @@ h1 {
   background: #fbd846
 }
 .btn--primary {
-  background: -o-linear-gradient(180.11deg,#fbd846 .07%,#ffe888 99.89%);
-  background: linear-gradient(269.89deg,#fbd846 .07%,#ffe888 99.89%);
+  background: #fbd846;
   -webkit-box-shadow: 10px 10px 20px rgba(255,216,111,.4);
   box-shadow: 10px 10px 20px rgba(255,216,111,.4);
-  opacity: .9
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s
 }
 .btn--primary:hover {
-  opacity: 1
+  background: #fff;
+  -webkit-box-shadow: 3px 3px 10px rgba(255,216,111,.4);
+  box-shadow: 3px 3px 10px rgba(255,216,111,.4)
 }
 html {
   font-size: 8px
@@ -798,6 +804,130 @@ body {
   -ms-grid-row: 1;
   -ms-grid-row-span: 3;
   grid-row: 1/4
+}
+.quiz {
+  background: linear-gradient(90deg,#ffe472 0,#f8cc55 100%,#fbd846 100%);
+  margin-top: 90px;
+  padding: 50px 0
+}
+.quiz-header {
+  background: #fff;
+  padding: 0 0 20px
+}
+.quiz-header__title {
+  padding: 20px 0 20px
+}
+.quiz-header__subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 30px
+}
+.quiz-header__subtitle img {
+  margin-right: 12px
+}
+.quiz-main {
+  background: #fff;
+  -webkit-box-shadow: 10px 10px 20px rgba(0,0,0,.1);
+  box-shadow: 10px 10px 20px rgba(0,0,0,.1);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin: 40px 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 55% 45%;
+  grid-template-columns: 55% 45%
+}
+.quiz-main__counter {
+  text-align: right;
+  font-weight: 400;
+  margin: 40px 30px 70px 0;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1.2px
+}
+.quiz-main__counter span {
+  color: #fbd846
+}
+.quiz-main__text {
+  padding: 20px 100px 30px 30px
+}
+.quiz-main__name {
+  font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 150%;
+  text-transform: uppercase
+}
+.quiz-main__subtext {
+  font-weight: 400;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin: 40px 0
+}
+.quiz-main__btn {
+  background: #fbd846;
+  margin-bottom: 90px
+}
+.advantages__title span.small {
+  background: #fff;
+  padding: 25px 40px;
+  text-align: center;
+  margin: 0 auto
+}
+.advantages-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4,1fr);
+  grid-column-gap: 30px
+}
+.advantages-card {
+  padding: 30px 10px;
+  background: #fff;
+  -webkit-box-shadow: 4px 4px 10px rgba(0,0,0,.1);
+  box-shadow: 4px 4px 10px rgba(0,0,0,.1);
+  border-radius: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 40% 40% 20%;
+  grid-template-rows: 40% 40% 20%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase
+}
+.advantages-card img {
+  width: 90px;
+  margin: 0 auto
+}
+.advantages-card__name {
+  -ms-flex-item-align: start;
+  -ms-grid-row-align: start;
+  align-self: start;
+  margin: 25px 0;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 24px
+}
+.advantages-card__text {
+  font-size: 1.4rem;
+  line-height: 1.4
 }
 @media (min-width:480px) {
   html {

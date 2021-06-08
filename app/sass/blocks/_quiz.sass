@@ -1,0 +1,85 @@
+.quiz
+	margin-top: 90px
+	background-color: $colors--yellow-gradient
+	padding: 50px 0
+	&-header
+		background-color: #fff
+		padding: 0px 0 20px
+		&__title
+			padding: 20px 0 20px
+		&__subtitle
+			display: flex
+			flex-flow: row wrap
+			justify-content: center
+			align-items: center
+			font-weight: $font-weight--light
+			font-size: 2rem
+			line-height: 30px
+			img
+				margin-right: 12px
+	&-main
+		background: #FFFFFF
+		box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1)
+		border-top-right-radius: 10px
+		border-bottom-right-radius: 10px
+		margin: 40px 0
+		display: grid
+		grid-template-columns: 55% 45%
+		&__counter
+			text-align: right
+			font-weight: $font-weight--regular
+			margin: 40px 30px 70px 0
+			font-size: 2.2rem
+			text-transform: uppercase
+			letter-spacing: 1.2px
+			span
+				color: $colors--primary
+		&__text
+			padding: 20px 100px 30px 30px
+		&__name
+			font-weight: $font-weight--bold
+			font-size: 2.2rem
+			line-height: 150%
+			text-transform: uppercase
+		&__subtext
+			font-weight: $font-weight--regular
+			font-size: 1.8rem
+			text-transform: uppercase
+			margin: 40px 0
+		&__btn
+			background-color: $colors--primary
+			margin-bottom: 90px
+.advantages
+	&__title
+		span.small
+			padding: 25px 40px
+			background-color: #fff
+			text-align: center
+			margin: 0 auto
+	&-grid
+		display: grid
+		grid-template-columns: repeat(4,1fr )
+		grid-column-gap: 30px
+	&-card
+		padding: 30px 10px
+		background: #FFFFFF
+		box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1)
+		border-radius: 10px
+		display: grid
+		grid-template-rows: 40% 40% 20%
+		justify-content: center
+		align-items: center
+		text-align: center
+		text-transform: uppercase
+		img
+			width: 90px
+			margin: 0 auto
+		&__name
+			align-self: start
+			margin: 25px 0
+			font-weight: $font-weight--semi-bold
+			font-size: 2rem
+			line-height: 24px
+		&__text
+			font-size: 1.4rem
+			line-height: 1.4
