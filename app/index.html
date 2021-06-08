@@ -191,17 +191,28 @@
 			<h2 class="kitchen__title title">Выбор <span class="text--yellow">кухни по стилям</span></h2>
 			<p class="kitchen__subtitle">Красивые, удобные и современные, кухни на заказ помогают создавать атмосферу уюта и комфорта в помещении. Вы хотите воплотить в жизнь мечты об удобном
 				гарнитуре? Мы готовы вам в этом помочь.</p>
-			<ul class="kitchen-tabs">
+			<div class="kitchen-tabs-grid">
 				<p class="kitchen-tabs__title">Выберите стиль:</p>
-				<li class="kitchen-tabs__item">Эконом</li>
-				<li class="kitchen-tabs__item">Маленькие</li>
-				<li class="kitchen-tabs__item">Классика</li>
-				<li class="kitchen-tabs__item">Скандинавский</li>
-				<li class="kitchen-tabs__item">Минимализм</li>
-				<li class="kitchen-tabs__item">Хай-тек</li>
-				<li class="kitchen-tabs__item">Лофт</li>
-				<li class="kitchen-tabs__item">Прованс</li>
-			</ul>
+				<ul class="kitchen-tabs">
+					<li class="kitchen-tabs__item kitchen-tabs__item--active">Эконом</li>
+					<li class="kitchen-tabs__item">Маленькие</li>
+					<li class="kitchen-tabs__item">Классика</li>
+					<li class="kitchen-tabs__item">Хай-тек</li>
+					<li class="kitchen-tabs__item">Скандинавский</li>
+					<li class="kitchen-tabs__item">Минимализм</li>
+					<li class="kitchen-tabs__item">Лофт</li>
+					<li class="kitchen-tabs__item">Прованс</li>
+				</ul>
+				<select class="kitchen-tabs__select">
+					<option>Эконом</option>
+					<option>Классика</option>
+					<option>Хай-тек</option>
+					<option>Скандинавский</option>
+					<option>Минимализм</option>
+					<option>Лофт</option>
+					<option>Прованс</option>
+				</select>
+			</div>
 			<div class="kitchen-gallery">
 				<div class="kitchen-gallery__item"><img src="img/kitchen/item-1.jpg" alt="кухня-1"></div>
 				<div class="kitchen-gallery__item"><img src="img/kitchen/item-2.jpg" alt="кухня-2"></div>
@@ -212,6 +223,33 @@
 			</div>
 		</div>
 	</section>
+
+	<div class="card card--promo">
+		<div class="container">
+			<div class="card-wrap">
+				<div class="card-text">
+					<h2 class="card__title">Есть замер или эскиз кухни, или просто нашли фото кухни в интернете которая Вам нравится?</h2>
+					<p class="card__subtitle">Отправьте его нам и мы посчитаем стоимость с учетом Ваших пожеланий!</p>
+					<form action="#" method="post" class="card-form">
+						<input type="text" name="user_name" id="calc_user_name" class="card-form__input" placeholder="Ваше имя" required>
+						<input type="tel" name="user_tel" id="calc_user_tel" class="card-form__input" placeholder="+7(_ _ _) _ _ _-_ _ - _ _ " required>
+						<div class="card-form-attachment">
+							<label class="card-form__file">
+								<input type="file" name="user_file" id="calc_user_file" class="card-form__file-input" multiple required>
+							</label>
+							<span class="card-form__file-title">Вы можете приложить эскиз или фото</span>
+						</div>
+						<input type="submit" class="card-form__input card-form__btn" value="Рассчитать стоимость">
+						<p class="card-form__confedencial confedencial">Нажимая кнопку “Рассчитать стоимость”, вы соглашаетесь с условиями Политики конфиденциальности</p>
+					</form>
+				</div>
+				<div class="card-img">
+					<img src="img/card--promo.png" alt="card--promo">
+				</div>
+
+			</div>
+		</div>
+	</div>
 
 
 
