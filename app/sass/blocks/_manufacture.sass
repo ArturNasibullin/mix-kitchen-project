@@ -1,1 +1,89 @@
 .manufacture
+	background-image: url(../img/manufacture/manufacture-bg.png)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center center
+	min-height: 1200px
+	position: relative
+	&-header
+		background-color: transparent
+		display: flex
+		justify-content: center
+	&__title
+		display: inline-block
+		font-weight: $font-weight--black
+		font-size: 2.8rem
+		line-height: 107%
+		text-align: center
+		text-transform: uppercase
+		color: $colors--text
+		background-color: $colors--primary
+		padding: 23px
+		@include _768
+			margin-bottom: 40px
+
+	&__wrap
+		@include _768
+			display: grid
+			grid-template-columns: 1fr 1fr
+			grid-template-rows: 1fr 1fr
+			grid-gap: 20px
+		@include _480
+			grid-template-columns: 1fr
+			grid-template-rows: 1fr
+	&__item
+		position: absolute
+		@include _768
+			position: static
+		@include _480
+			margin: 0 auto
+
+		img
+			position: relative
+			z-index: 20
+		&--gost
+			left: 100px
+			top: 100px
+			position: relative
+			&::after
+				content: url(../img/manufacture/pointer.png)
+				position: absolute
+				left: -134px
+				bottom: -160px
+				@include _768
+					display: none
+		&--material
+			left: 640px
+			top: 300px
+			&::after
+				content: url(../img/manufacture/pointer.png)
+				position: absolute
+				left: 0
+				bottom: -160px
+				transform: rotate(330deg)
+				z-index: 10
+				@include _768
+					display: none
+		&--equipment
+			right: 85px
+			top: 100px
+			&::after
+				content: url(../img/manufacture/pointer.png)
+				position: absolute
+				left: 134px
+				bottom: -160px
+				transform: rotate(300deg)
+				@include _768
+					display: none
+
+		&--control
+			bottom: 190px
+			right: 250px
+			&::after
+				content: url(../img/manufacture/pointer.png)
+				position: absolute
+				right: -120px
+				top: 30px
+				transform: rotate(230deg)
+				@include _768
+					display: none
