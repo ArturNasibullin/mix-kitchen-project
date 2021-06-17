@@ -1,27 +1,15 @@
 .form
-	&__label
-		width: 100%
-		font-size: 16px
-		line-height: 150%
-		@include _768
-			margin-left: 10px
-
 	&__input
+		border: 1px solid $colors--gray
+		background-color: transparent
+		border-radius: 20px
 		width: 100%
-		margin-bottom: 40px
-		margin-top: 10px
-		padding: 10px
-		height: 50px
-		background-color: $colors--level1
-		border: none
-		color: $colors--text
+		padding: 20px
+		height: 60px
+		color: #fff
 		font-size: 1.8rem
 		&:focus
 			outline: 1px solid $colors--primary
-		@include _768
-			display: block
-			margin: 10px auto 40px
-			width: 97%
 	&__textarea
-		height: 100px
+		height: 120px
 		resize: none
