@@ -5,9 +5,10 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
 	<link rel="stylesheet" href="css/style.min.css">
 	<!-- Fonts -->
-	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel=" preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
 	<title>Кухни МИКС</title>
 </head>
@@ -457,6 +458,23 @@
 		</div>
 	</section>
 
+	<section class="jobs">
+		<div class="container">
+			<h2 class="jobs__title title">Наши <span>работы</span> </h2>
+			<div class="jobs-slider splide">
+				<div class="splide__track">
+					<ul class="splide__list">
+						<li class="jobs-slider__item splide__slide"><img src="img/jobs/job-1.jpg" alt="job-1" class="jobs-slider__img"></li>
+						<li class="jobs-slider__item splide__slide"><img src="img/jobs/job-2.jpg" alt="job-2" class="jobs-slider__img"></li>
+						<li class="jobs-slider__item splide__slide"><img src="img/jobs/job-3.jpg" alt="job-3" class="jobs-slider__img"></li>
+						<li class="jobs-slider__item splide__slide"><img src="img/jobs/job-4.jpg" alt="job-4" class="jobs-slider__img"></li>
+						<li class="jobs-slider__item splide__slide"><img src="img/jobs/job-5.jpg" alt="job-5" class="jobs-slider__img"></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<footer class="footer">
 		<div class="container">
 		</div>
@@ -509,6 +527,28 @@
 	</svg>
 
 	<script src="js/main.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+	<script>
+		new Splide('.splide', {
+			type: 'loop',
+			perPage: 3,
+			pagination: false,
+			gap: 30,
+			classes: {
+				arrow: 'splide__arrow slider__arrow',
+				prev: 'splide__arrow--prev slider__arrow--prev',
+				next: 'splide__arrow--next slider__arrow--next'
+			},
+			breakpoints: {
+				768: {
+					perPage: 2,
+				},
+				480: {
+					perPage: 1,
+				}
+			}
+		}).mount();
+	</script>
 </body>
 
 </html>
