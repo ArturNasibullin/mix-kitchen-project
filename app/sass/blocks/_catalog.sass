@@ -1,0 +1,71 @@
+.catalog
+	&-grid
+		display: grid
+		grid-template-columns: repeat(3, 1fr)
+		grid-template-rows: repeat(2, 1fr )
+		grid-column-gap: 30px
+		grid-row-gap: 20px
+		@include _768
+			grid-template-columns: repeat(2, 1fr )
+		@include _480
+			grid-template-columns: 1fr
+	&__title
+		text-align: left
+	&-card
+		position: relative
+		background-color: #fff
+		box-shadow: 10px 10px 20px rgba(51, 51, 51, 0.05)
+		display: flex
+		flex-flow: column nowrap
+		justify-content: center
+		transition: color 0.3s
+		&:hover
+			color: $colors--green
+		&__img
+		&__text
+			padding: 25px
+		&__name
+			font-weight: $font-weight--semi-bold
+			font-size: 1.6rem
+			line-height: 20px
+			min-height: 60px
+			@include _480
+				font-size: 2rem
+		&__old-price
+			font-weight: $font-weight--semi-bold
+			font-size: 1.6rem
+			line-height: 20px
+			text-decoration-line: line-through
+			color: $colors--gray
+			padding: 20px 0 5px 0!important
+		&__new-price
+			font-weight: $font-weight--semi-bold
+			font-size: 2.5rem
+			line-height: 30px
+			color: $colors--green
+		&__btn
+			background: #F4F4F4
+			border-radius: 50%
+			border: none
+			width: 40px
+			height: 40px
+			color: $colors--green
+			font-size: 3rem
+			position: absolute
+			bottom: 30px
+			right: 30px
+			transition: all 0.3s
+			&:hover
+				color: #fff
+				cursor: pointer
+				background-color: $colors--green
+	&__show-all
+		width: 360px
+		margin: 50px auto
+		box-shadow: 10px 10px 20px rgba(255, 216, 111, 0.4)
+		opacity: .9
+		@include _480
+			width: 100%
+
+		&:hover
+			opacity: 1

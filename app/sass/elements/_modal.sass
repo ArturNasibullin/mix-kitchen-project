@@ -1,5 +1,7 @@
 .modal
-	display: none
+	opacity: 0
+	visibility: hidden
+	transition: opacity .2s
 	&__overlay
 		width: 100%
 		min-height: 100vh
@@ -17,38 +19,62 @@
 		transition: 0.35s ease-in-out
 		max-height: 100vh
 		overflow: hidden
-		&.open
-			opacity: 1
-			cursor: pointer
 	&__wrapper
 		z-index: 9979
 		position: relative
 		margin-top: 100px
 		color: $colors--text
-		max-width: 450px
+		max-width: 550px
 		padding: 30px
-		border-radius: 15px
-		background-color: $colors--white
+		border-radius: 10px
+		background-color: #fff
 		@include _480
 			margin-top: 0
-	&__socials
-		@include _480
-			display: none
-	&__header
-		font-size: 1.4rem
-		text-transform: uppercase
-		margin-bottom: 30px
-		text-align: center
+	&-header
+		font-size: 2.8rem
+		line-height: 34px
+		color: #000000
+		margin-bottom: 50px
+	&-subtitle
+		font-size: 18px
+		line-height: 30px
+		color: #222222
+		display: flex
+		flex-flow: row nowrap
+		align-items: start
+		margin-bottom: 50px
+		&__img
+			margin-right: 20px
+			margin-top: 5px
 	&__close
 		position: absolute
 		font-size: 60px
 		color: #ffffff
 		top: -24px
 		right: -35px
+		cursor: pointer
 	&__input
 		width: 100%
 		margin-bottom: 20px
-
+		color: $colors--text
+	&__btn
+		width: 100%
+		margin-bottom: 30px
+	&-calc
+		&__furniture
+			box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.05)
+			border-radius: 10px
+			display: flex
+			flex-flow: row nowrap
+			justify-content: space-around
+			align-items: center
+			margin: 30px auto
+			padding: 15px 0
+		&__text
+			font-weight: $font-weight--bold
+			font-size: 2rem
+			line-height: 30px
+			text-transform: uppercase
 .modal-thanks
 	display: none
 	&__overlay

@@ -5,6 +5,8 @@
 	&-header
 		background-color: #fff
 		padding: 0px 0 20px
+		@include _480
+			padding: 0 10px
 		&__title
 			padding: 20px 0 20px
 		&__subtitle
@@ -85,7 +87,7 @@
 		@include _768
 			grid-template-columns: repeat(3,1fr )
 		@include _480
-			grid-template-columns: repeat(2, 1fr )
+			grid-template-columns: repeat(1, 1fr )
 	&-card
 		padding: 30px 10px
 		background: #FFFFFF

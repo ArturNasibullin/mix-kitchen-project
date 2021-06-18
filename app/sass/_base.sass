@@ -1,5 +1,5 @@
 html
-	@include fluidFontSize($font-size--xsmall, $font-size--base)
+	@include fluidFontSize($font-size--small, $font-size--base)
 body
 	font-family: $font-family__primary
 	font-weight: $font-weight--regular
@@ -26,6 +26,9 @@ body
 	line-height: 15px
 	text-align: center
 	color: #737373
+	@include _480
+		font-size: 1.4rem
+
 .slider__arrow
 	width: 50px
 	height: 50px
