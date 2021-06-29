@@ -29,3 +29,15 @@
 		&:hover
 			background-color: #fff
 			box-shadow: 3px 3px 10px rgba(255, 216, 111, 0.4)
+	&--green
+		width: 360px
+		background: $colors--green-gradient
+		margin: 50px auto
+		box-shadow: 10px 10px 20px rgba(255, 216, 111, 0.4)
+		opacity: .9
+		@include _768
+			width: 70%
+		@include _480
+			width: 100%
+		&:hover
+			opacity: 1

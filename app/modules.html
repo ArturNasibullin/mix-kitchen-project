@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
+	<!-- Fonts -->
+	<link rel=" preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+	<title>Кухни МИКС</title>
+</head>
+
+
+<body>
+	<div class="yellow-line"></div>
+
+	<header class="header">
+		<div class="header__grid">
+			<div class="header-top-line__address text--small">
+				<img src="img/geotag.png" class="header-top-line__img" alt="">
+				г. Нижневартовск, ул. Индустриальная, д.7 стр. 1 ТЦ “ВДНХ”, 2 этаж, бутик № 20а
+			</div>
+			<div class="header-top-line__phone text--bold">
+				<a href="tel:+7346668-598"><img src="img/phone-icon.png" class="header-top-line__img" alt="phone-icon"></a>
+				<a href="tel:+7346668-598">+7 (3466) 68-15-98</a>
+			</div>
+			<img class="logo header__logo" src="img/logo.png" alt="">
+			<button class="burger header__nav-btn">
+				<span class="burger__span"></span>
+			</button>
+			<ul class="header__menu-list">
+				<li class="header__menu-item"><a href="#" class="header__menu-link">Каталог товаров</a></li>
+				<li class="header__menu-item"><a href="#" class="header__menu-link">Кухонные модули</a></li>
+				<li class="header__menu-item"><a href="#" class="header__menu-link">Декоры</a> </li>
+				<li class="header__menu-item"><a href="#" class="header__menu-link">Фотопечать</a></li>
+				<li class="header__menu-item"><a href="#" class="header__menu-link">Готовые решения</a></li>
+				<li class="header__menu-item"><a href="#" class="header__menu-link">Контакты</a></li>
+			</ul>
+			<p class="btn btn--trans modal-open header__btn" data-connect="callback">Заказать звонок</p>
+		</div>
+		<div class="header-mobile">
+			<ul class="header-mobile-menu mobile-menu">
+				<li class="header-mobile-menu__item">
+					<a href="#" class="header-mobile-menu__link">Каталог товаров</a>
+				</li>
+				<li class="header-mobile-menu__item">
+					<a href="#" class="header-mobile-menu__link">Кухонные модули</a>
+				</li>
+				<li class="header-mobile-menu__item">
+					<a href="#" class="header-mobile-menu__link">Декоры</a>
+				</li>
+				<li class="header-mobile-menu__item">
+					<a href="#" class="header-mobile-menu__link">Фотопечать</a>
+				</li>
+				<li class="header-mobile-menu__item">
+					<a href="#" class="header-mobile-menu__link">Готовые решения</a>
+				</li>
+				<li class="header-mobile-menu__item">
+					<a href="#" class="header-mobile-menu__link">Контакты</a>
+				</li>
+			</ul>
+			<div class="header-mobile-phone">
+				<img src="img/phone-icon--yellow.svg" class="header-top-line__img" alt="phone-icon">
+				<a href="tel:+7346668-598">+7 (3466) 68-15-98</a>
+			</div>
+			<a href="#" class="btn btn--trans modal-open header-mobile-btn">Заказать звонок</a>
+			<div class="header-mobile-address">
+				<img src="img/geotag--yellow.svg" class="header-top-line__img" alt="">
+				<p>
+					г. Нижневартовск, ул. Индустриальная, д.7 стр. 1 ТЦ “ВДНХ”, <br> 2 этаж, бутик № 20а
+				</p>
+			</div>
+		</div>
+	</header>
+
+	<section class="modules">
+		<div class="container">
+			<div class="modules-seo">
+				<h2 class="modules-seo__title">Кухонные модули</h2>
+				<div class="modules-seo__descr">
+					<div class="modules-seo__text text">
+						<p>Хотите заказать кухню по своим размерам? Для этого Вы можете выбрать кухонные модули, их размеры, цвет фасадов и столешницы и мы рассчитаем стоимость вышей кухни.</p>
+						<p>Специально для Вашего удобства в этом разделе мы собрали схемы готовых вариантов кухонных модулей для индивидуального подбора размеров кухонь. Данные схемы можно
+							использовать,
+							выбирая модули для любого кухонного гарнитура.</p>
+					</div>
+					<img src="img/modules/hero.png" alt="" class="modules-seo__img">
+				</div>
+			</div>
+			<div class="modules-main">
+				<p class="modules-main__text text">Вы можете подобрать кухонные модули уже по готовым вариантам или выбрать модули по своему усмотрению на Ваш вкус:</p>
+				<img src="img/modules/modules.png" alt="" class="modules-main__img">
+				<a href="img/modules/modules.png" download="proposed_file_name" class="btn btn--green">Скачать полноразмерный вариант</a>
+			</div>
+		</div>
+		<div class="modules-card">
+			<div class="card modules-card">
+				<div class="container">
+					<div class="card-wrap modules-card-wrap">
+						<div class="card__text">
+							<h2 class="card__title modules-card__title">Выбрали модули?</h2>
+							<p class="card__subtitle">Рассчитаем их стоимость</p>
+						</div>
+						<form action="#" method="post" class="card-form">
+							<input type="text" name="user_name" id="calc_user_name" class="card-form__input" placeholder="Ваше имя" required>
+							<input type="tel" name="user_tel" id="calc_user_tel" class="card-form__input" placeholder="+7(_ _ _) _ _ _-_ _ - _ _ " required>
+							<div class="card-form-attachment">
+								<label class="card-form__file">
+									<input type="file" name="user_file" id="calc_user_file" class="card-form__file-input" multiple required>
+								</label>
+								<span class="card-form__file-title">Вы можете приложить эскиз или фото</span>
+							</div>
+							<input type="submit" class="card-form__input card-form__btn" value="Рассчитать стоимость">
+							<p class="card-form__confedencial confedencial">Нажимая кнопку “Рассчитать стоимость”, вы соглашаетесь с условиями Политики конфиденциальности</p>
+						</form>
+						<div class="card-img">
+							<img src="img/card--promo.png" alt="card--promo">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modules-more">
+			<div class="container">
+				<p class="modules-more__text text">Современные кухонные гарнитуры позволяют обеспечивать индивидуальную комплектацию предметов в интерьере. В нашем каталоге вы найдете подвесные
+					модули
+					для кухни, адаптированные под различную планировку зданий, а также высоту потолков. Полный размерный ряд, доступный для заказа, представлен на странице.
+				</p>
+				<p class="modules-more__text text">Нужны нижние модули для кухни? Подходящие решения найдется в нашем ассортименте. Подвесной шкаф настенный или угловые пеналы можно подобрать,
+					исходя из
+					типа гарнитура, параметров
+					и планировки помещения. Наши специалисты помогут принять верное решение.</p>
+				<h2 class="modules-seo__title modules-more__title">Условия доставки и сборки</h2>
+				<p class="modules-more__text text">Если вы хотите купить отдельно шкафы верхнего или нижнего ряда, решить вопрос их доставки или сборки можно без лишних усилий. Мы предоставляем
+					все
+					эти
+					услуги в комплексе и гарантируем оперативность действий своих сотрудников. Нет денег сейчас? Возьмите товар в рассрочку от производителя или оформите его в кредит в одном из
+					банков-партнеров. Подробнее уточнить все условия можно, прибегнув к помощи наших менеджеров.</p>
+				<h2 class="modules-seo__title modules-more__title">Преимущества заказа подвесных и нижних модулей для кухни у компании «Кухни-Микс»</h2>
+				<p class="modules-more__text text">Почему вам стоит обратиться для приобретения модульных решений именно к нам? Стоимость продукции у нас всегда остается доступной. Назначенная
+					цена
+					зависит от исполнения и габаритов изделия, а также количества модулей. Вы хотите изготовить модули на заказ? Мы готовы сделать это недорого, предлагая вам выбрать оптимальную
+					комплектацию кухни.</p>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="consult">
+		<div class="container">
+			<div class="consult-grid">
+				<form action="#" method="post" class="consult-form form">
+					<h2 class="consult__header"><span>Проконсультируем</span> по любым вопросам</h2>
+					<input class="consult-form__input form__input" type="text" name="user_name" id="consult_user_name" placeholder="Ваше имя" required>
+					<input class="consult-form__input form__input" type="tel" name="user_tel" id="consult_user_tel" placeholder="+7(_ _ _) _ _ _-_ _ - _ _ " required>
+					<textarea class="consult-form__textarea form__textarea form__input" name="user_message" id="cosult_user_message" cols="30" rows="10"
+						placeholder="Кратко опишите Ваш вопрос"></textarea>
+					<input type="submit" value="Получить консультацию" class="btn btn--primary">
+					<p class="consult-form__confedencial confedencial">Нажимая кнопку "Получить консультацию" вы даете согласие на обработку персональных данных в соответствии с политикой
+						конфиденциальности</p>
+				</form>
+				<div class="consult-img">
+					<img src="img/consult/1.png" alt="kitchen">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-grid">
+				<div class="footer-address">
+					<img src="img/logo.png" alt="logo" class="footer-address__logo">
+					<p class="footer-address__text">г. Нижневартовск,
+						ул. Индустриальная, д.7 стр. 1
+						ТЦ “ВДНХ”, 2 этаж,
+						бутик № 20а</p>
+				</div>
+				<ul class="footer-menu">
+					<li class="footer__title">Разделы :</li>
+					<li class="footer-menu__item"><a href="#">Каталог товаров</a></li>
+					<li class="footer-menu__item"><a href="#">Кухонные модули</a></li>
+					<li class="footer-menu__item"><a href="#">Декоры МДФ/Лдсп</a></li>
+					<li class="footer-menu__item"><a href="#">Готовые решения</a></li>
+				</ul>
+				<ul class="footer-contacts">
+					<li class="footer__title">Контакты :</li>
+					<li>
+						<a href="#" class="footer-contacts__item">
+							<img src="img/icons/envelop.svg" alt="" class="footer-contacts__img">
+							<p class="footer-contacts__text">uhninv@mail.ru</p>
+						</a>
+					</li>
+
+					<li>
+						<a href="#" class="footer-contacts__item">
+							<img src="img/icons/vk.svg" alt="" class="footer-contacts__img">
+							<p class="footer-contacts__text">vk.com/kuhninv</p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="footer-contacts__item">
+							<img src="img/icons/call.svg" alt="" class="footer-contacts__img">
+							<p class="footer-contacts__text">8 (3466) 68-20-15
+							</p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="footer-contacts__item">
+							<img src="img/icons/ok.svg" alt="" class="footer-contacts__img">
+							<p class="footer-contacts__text">ok.ru/kuhninv</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+
+	<!--Modal-->
+	<!-- <div class="modal modal--callback">
+		<div class="modal__overlay">
+			<div class="modal__wrapper">
+				<a class="modal__close" href="#">&times;</a>
+				<h2 class="modal-header">Заказать звонок</h2>
+				<div class="modal-subtitle">
+					<img src="img/icons/call.svg" alt="" class="modal-subtitle__img">
+					<p class="modal-subtitle__text">Вы можете задать любой интересующий Вас вопрос, уточнить цены, вызвать замерщика, проконсультироваться о продукции.</p>
+				</div>
+				<form class="modal-form form" action="mail.php" method="POST">
+					<div class="modal-form__wrap">
+						<input class="form__input modal__input" required type="text" name="user_name" id="modal-callback_user_name" placeholder="Ваше имя">
+						<input class="modal__input form__input" type="tel" name="user_tel" id="modal-callback_user_tel" placeholder="+7(_ _ _) _ _ _-_ _ - _ _ " required>
+						<input type="submit" class="btn modal__btn btn--primary" value="Позвоните мне">
+						<p class="consult-form__confedencial confedencial">Нажимая кнопку “Позвоните мне”, вы соглашаетесь с условиями
+							Политики конфиденциальности</p>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div> -->
+	<div class="modal modal--calc">
+		<div class="modal__overlay">
+			<div class="modal__wrapper">
+				<p class="modal__close" href="#">&times;</p>
+				<h2 class="modal-header">Рассчитать стоимость</h2>
+				<form class="modal-form form" action="#" method="POST">
+					<div class="modal-form__wrap">
+						<input class="form__input modal__input" required type="text" name="user_name" id="modal-calc_user_name" placeholder="Ваше имя">
+						<input class="modal__input form__input" type="tel" name="user_tel" id="modal-calc_user_tel" placeholder="+7(_ _ _) _ _ _-_ _ - _ _ " required>
+						<div class="modal-calc__furniture">
+							<img src="img/furniture/ldsp.jpg" alt="" class="modal-cal__img">
+							<p class="modal-calc__text">Кухни из лдсп</p>
+						</div>
+						<input type="submit" class="btn modal__btn btn--primary" value="Позвоните мне">
+					</div>
+				</form>
+				<p class="card-policy policy">Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и
+					соглашаетесь с <a href="#">Политикой конфиденциальности</a> </p>
+			</div>
+		</div>
+	</div>
+	<div class="modal-thanks" style="display:none">
+		<div class="modal__overlay">
+			<div class="modal__wrapper gradient">
+				<a class="modal__close" href="#">&times;</a>
+				<h2 class="modal-thanks__header"></h2>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/main.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+	<script>
+		new Splide('.splide', {
+			type: 'loop',
+			perPage: 3,
+			pagination: false,
+			gap: 30,
+			classes: {
+				arrow: 'splide__arrow slider__arrow',
+				prev: 'splide__arrow--prev slider__arrow--prev',
+				next: 'splide__arrow--next slider__arrow--next'
+			},
+			breakpoints: {
+				768: {
+					perPage: 2,
+				},
+				480: {
+					perPage: 1,
+				}
+			}
+		}).mount();
+	</script>
+</body>
+
+</html>

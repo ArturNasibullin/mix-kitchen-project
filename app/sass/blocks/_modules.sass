@@ -1,0 +1,44 @@
+.modules
+	margin-top: 60px
+	&-seo
+		&__title
+			font-weight: $font-weight--black
+			font-size: 2.8rem
+			line-height: 107%
+			text-transform: uppercase
+			margin-bottom: 20px
+		&__descr
+			display: flex
+			flex-flow: row wrap
+			justify-content: space-between
+			margin-bottom: 40px
+		&__text
+			width: 47%
+			line-height: 30px
+			p
+				margin-bottom: 30px
+		&__img
+			width: 50%
+			@include _768
+				height: 80%
+
+	&-main
+		&__text
+			line-height: 30px
+			text-align: center
+		&__img
+			margin: 40px 0
+	&-card
+		padding: 40px 0
+		background-color: $colors--yellow-gradient
+		&-wrap
+			padding-top: 20px
+		&__title
+			margin-bottom: 15px
+	&-more
+		margin: 100px 0
+		&__text
+			margin-bottom: 25px
+		&__title
+			margin-top: 50px
+			margin-bottom: 30px
