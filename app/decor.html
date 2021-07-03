@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
+	<!-- Fonts -->
+	<link rel=" preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+	<title>Кухни МИКС</title>
+</head>
+
+
+<body>
+	<div class="yellow-line"></div>
+
+	<header class="header">
+		<div class="header__grid">
+			<div class="header-top-line__address text--small">
+				<img src="img/geotag.png" class="header-top-line__img" alt="">
+				г. Нижневартовск, ул. Индустриальная, д.7 стр. 1 ТЦ “ВДНХ”, 2 этаж, бутик № 20а
+			</div>
+			<div class="header-top-line__phone text--bold">
+				<a href="tel:+7346668-598"><img src="img/phone-icon.png" class="header-top-line__img" alt="phone-icon"></a>
+				<a href="tel:+7346668-598">+7 (3466) 68-15-98</a>
+			</div>
+			<img class="logo header__logo" src="img/logo.png" alt="">
+			<button class="burger header__nav-btn">
+				<span class="burger__span"></span>
+			</button>
+			<ul class="header__menu-list">
+				<li class="header__menu-item"><a href="#" class="header__menu-link">Каталог товаров</a></li>
+				<li class="header__menu-item"><a href="#" class="header__menu-link">Кухонные модули</a></li>
+				<li class="header__menu-item"><a href="#" class="header__menu-link">Декоры</a> </li>
+				<li class="header__menu-item"><a href="#" class="header__menu-link">Фотопечать</a></li>
+				<li class="header__menu-item"><a href="#" class="header__menu-link">Готовые решения</a></li>
+				<li class="header__menu-item"><a href="#" class="header__menu-link">Контакты</a></li>
+			</ul>
+			<p class="btn btn--trans modal-open header__btn" data-connect="callback">Заказать звонок</p>
+		</div>
+		<div class="header-mobile">
+			<ul class="header-mobile-menu mobile-menu">
+				<li class="header-mobile-menu__item">
+					<a href="#" class="header-mobile-menu__link">Каталог товаров</a>
+				</li>
+				<li class="header-mobile-menu__item">
+					<a href="#" class="header-mobile-menu__link">Кухонные модули</a>
+				</li>
+				<li class="header-mobile-menu__item">
+					<a href="#" class="header-mobile-menu__link">Декоры</a>
+				</li>
+				<li class="header-mobile-menu__item">
+					<a href="#" class="header-mobile-menu__link">Фотопечать</a>
+				</li>
+				<li class="header-mobile-menu__item">
+					<a href="#" class="header-mobile-menu__link">Готовые решения</a>
+				</li>
+				<li class="header-mobile-menu__item">
+					<a href="#" class="header-mobile-menu__link">Контакты</a>
+				</li>
+			</ul>
+			<div class="header-mobile-phone">
+				<img src="img/phone-icon--yellow.svg" class="header-top-line__img" alt="phone-icon">
+				<a href="tel:+7346668-598">+7 (3466) 68-15-98</a>
+			</div>
+			<a href="#" class="btn btn--trans modal-open header-mobile-btn">Заказать звонок</a>
+			<div class="header-mobile-address">
+				<img src="img/geotag--yellow.svg" class="header-top-line__img" alt="">
+				<p>
+					г. Нижневартовск, ул. Индустриальная, д.7 стр. 1 ТЦ “ВДНХ”, <br> 2 этаж, бутик № 20а
+				</p>
+			</div>
+		</div>
+	</header>
+
+	<section class="decor">
+		<div class="container">
+			<h2 class="decor__title title">Декоры</h2>
+			<ul class="decor-tabs" id="decor-tabs">
+				<li class="decor-tabs__item">Декоры мдф</li>
+				<li class="decor-tabs__item ">Декоры лдсп</li>
+				<li class="decor-tabs__item">ФАСАДЫ ЭМАЛЬ</li>
+				<li class="decor-tabs__item ">ПЛАСТИК ARPA</li>
+				<li class="decor-tabs__item decor-tabs__item--active">ПЛАСТИК MARSHALLPLAST</li>
+				<li class="decor-tabs__item">ДЕКОРЫ СТОЛЕШНИЦ</li>
+			</ul>
+		</div>
+		<div class="decor-descr">
+			<!-- <div class="decor-descr__item decor-descr__item--mdf">
+				<div class="container">
+					<p class="decor-descr__text">МДФ - это прочный и однородный материал. Чтобы придать Вашей кухне необыкновенно красивый вид, мы предлагаем использовать МДФ фасады в пленке
+						ПВХ.
+						Огромный выбор различных МДФ цветов воплотит все Ваши идеи в жизнь. Образцы декоров МДФ Вы можете увидеть в нашем каталоге, но стоит учитывать, что фото цветов МДФ могут
+						несколько отличаться от реального оттенка из-за особенностей цветопередачи монитора и других причин, поэтому окончательный выбор лучше делать, увидев образцы мдф пленки
+						вживую.
+					</p>
+					<ul class="decor-descr__filter">
+						<li class="decor-descr__filter-item decor-descr__filter-item--active">Все</li>
+						<li class="decor-descr__filter-item">Светлые</li>
+						<li class="decor-descr__filter-item">Темные</li>
+						<li class="decor-descr__filter-item">Дерево</li>
+						<li class="decor-descr__filter-item">Цветные</li>
+						<li class="decor-descr__filter-item">С узором</li>
+					</ul>
+				</div>
+				<div class="decor-descr__material-bg decor-descr__material-bg--gray">
+					<div class="decor-descr__material">
+						<div class="container">
+							<h3 class="decor-descr__material-name decor-descr__material-name--gold">Матовые</h3>
+							<div class="decor-descr__material-grid">
+								<div class="decor-descr__material-item">
+									<img src="img/decor/mdf/mate/item-1.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/mdf/mate/item-2.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/mdf/mate/item-3.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/mdf/mate/item-4.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/mdf/mate/item-5.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/mdf/mate/item-6.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/mdf/mate/item-7.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/mdf/mate/item-8.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/mdf/mate/item-9.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/mdf/mate/item-10.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/mdf/mate/item-11.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/mdf/mate/item-12.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/mdf/mate/item-13.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/mdf/mate/item-14.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/mdf/mate/item-15.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/mdf/mate/item-16.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="decor-descr__material-bg decor-descr__material-bg--yellow">
+					<div class="decor-descr__material">
+						<div class="container">
+							<h3 class="decor-descr__material-name decor-descr__material-name--black">Металлик</h3>
+							<div class="decor-descr__material-grid">
+								<div class="decor-descr__material-item">
+									<img src="img/decor/mdf/metal/item-1.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/mdf/metal/item-2.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/mdf/metal/item-3.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/mdf/metal/item-4.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/mdf/metal/item-5.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/mdf/metal/item-6.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/mdf/metal/item-7.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/mdf/metal/item-8.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/mdf/metal/item-9.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/mdf/metal/item-10.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/mdf/metal/item-11.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/mdf/metal/item-12.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/mdf/metal/item-13.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/mdf/metal/item-14.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/mdf/metal/item-15.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/mdf/metal/item-16.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="decor-descr__material-bg decor-descr__material-bg--white">
+					<div class="decor-descr__material">
+						<div class="container">
+							<h3 class="decor-descr__material-name decor-descr__material-name--black">гЛЯНЕЦ</h3>
+							<div class="decor-descr__material-grid">
+								<div class="decor-descr__material-item">
+									<img src="img/decor/mdf/gloss/item-1.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/mdf/gloss/item-2.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/mdf/gloss/item-3.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/mdf/gloss/item-4.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/mdf/gloss/item-5.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/mdf/gloss/item-6.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/mdf/gloss/item-7.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/mdf/gloss/item-8.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/mdf/gloss/item-9.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/mdf/gloss/item-10.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/mdf/gloss/item-11.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/mdf/gloss/item-12.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/mdf/gloss/item-13.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/mdf/gloss/item-14.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/mdf/gloss/item-15.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/mdf/gloss/item-16.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="decor-descr-ps">
+					<div class="container">
+						<h3 class="decor-descr-ps__title title">Образцы кухонных фасадов из МДФ</h3>
+						<div class="decor-descr-ps__text text">
+							<p>Привлекательные и стильные, кухонные фасады МДФ, образцы которых представлены на нашем сайте, обладают массой достоинств. Они выглядят эстетично, позволяют
+								визуализировать практически любые оттенки и фактуры материалов, долговечны и практичны. Пленка для фасадов МДФ изготавливается из безопасных, гипоаллергенных
+								материалов.
+								Матовая или глянцевая фактура позволяет легко менять внешний вид фасадов гарнитура. Мы предлагаем вам выбрать лучшее решение для своего дома.
+							</p>
+							<p>Компания «Кухни Микс» предлагает воплотить в жизнь любые ваши дизайнерские решения. Наши фасады МДФ в пленке ПВХ представлены в виде палитры на сайте, но стоит
+								учитывать, что фото цветов МДФ могут несколько отличаться от реального оттенка из-за особенностей цветопередачи монитора и других причин, поэтому окончательный выбор
+								лучше делать, увидев образцы фасадов вживую.
+							</p>
+							<p>Изготавливая мебельную продукцию на заказ, мы предлагаем широкий выбор вариантов ее дизайна. Оценить результаты работы специалистов можно, посетив наш
+								интернет-магазин
+								или салон в Нижневартовске.
+							</p>
+							<p>
+								Самые необычные решения уже ждут своих заказчиков. Фактура натуральной кожи или дерева, текстиля или слоновой кости, металла и пластика — все материалы отличаются
+								влагостойкостью и полностью соответствуют экологическим стандартам. Вы можете выбрать подходящее решение сами или прибегнуть к помощи профессионалов.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div> -->
+			<!-- <div class="decor-descr__item decor-descr__item--ldsp">
+				<div class="container">
+					<p class="decor-descr__text">Из ламинированной ДСП (ЛДСП) обычно производятся корпуса и фасады кухонь, сегодня это самый распространенный в производстве материал. Неоспоримые
+						достоинства ЛДСП – легкость обработки, экономичность. Изделия из этого материала отличаются привлекательным внешним видом, простотой в эксплуатации и гораздо меньшей
+						стоимостью по сравнению с другими материалами.
+					</p>
+					<ul class="decor-descr__filter">
+						<li class="decor-descr__filter-item decor-descr__filter-item--active">Все</li>
+						<li class="decor-descr__filter-item">Светлые</li>
+						<li class="decor-descr__filter-item">Темные</li>
+						<li class="decor-descr__filter-item">Дерево</li>
+						<li class="decor-descr__filter-item">Цветные</li>
+					</ul>
+				</div>
+				<div class="decor-descr__material-bg decor-descr__material-bg--gray">
+					<div class="decor-descr__material">
+						<div class="container">
+							<h3 class="decor-descr__material-name decor-descr__material-name--gold">все</h3>
+							<div class="decor-descr__material-grid">
+								<div class="decor-descr__material-item">
+									<img src="img/decor/ldsp/item-1.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">Дуб баррик светлый</p>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/ldsp/item-2.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">Дуб баррик светлый</p>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/ldsp/item-3.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">Дуб баррик светлый</p>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/ldsp/item-4.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">Дуб баррик светлый</p>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/ldsp/item-5.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">Дуб баррик светлый</p>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/ldsp/item-6.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">Дуб баррик светлый</p>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/ldsp/item-7.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">Дуб баррик светлый</p>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/ldsp/item-8.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">Дуб баррик светлый</p>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/ldsp/item-9.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">Дуб баррик светлый</p>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/ldsp/item-10.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">Дуб баррик светлый</p>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/ldsp/item-11.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">Дуб баррик светлый</p>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/ldsp/item-12.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">Дуб баррик светлый</p>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/ldsp/item-13.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">Дуб баррик светлый</p>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/ldsp/item-14.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">Дуб баррик светлый</p>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/ldsp/item-15.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">Дуб баррик светлый</p>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/ldsp/item-16.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">Дуб баррик светлый</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> -->
+			<!-- <div class="decor-descr__item decor-descr__item--arpa">
+				<div class="container">
+					<div class="decor-descr__text">Итальянский пластик Арпа (Arpa) является одним из разновидностей пластиков HPL (High Pressure Laminate) в переводе ламинат высокого давления.
+						Пластик АРПА служит универсальным отделочным материалом, который широко применяют в мебельном производстве благодаря его свойствам:
+						<p>
+							Высокая термоустойчивость, способен переносить как низкие так и высокие температуры.
+							Влагоотталкивающие свойства, пластик не впитывает воду и масла.
+							Устойчив к воздействию ультрафиолета, поэтому фасады из пластика не выцветают.
+							Высокая химическая устойчивость к маслам, жирам и нефтехимическим продуктам.
+							Высокая ударопрочность, пластик способен выдержать высокое физическое воздействие без повреждения поверхностного слоя.
+						</p>
+
+					</div>
+					<ul class="decor-descr__filter">
+						<li class="decor-descr__filter-item ">Все</li>
+						<li class="decor-descr__filter-item">ALEVE</li>
+						<li class="decor-descr__filter-item">EREE</li>
+						<li class="decor-descr__filter-item">LARIX</li>
+						<li class="decor-descr__filter-item">LUCIDA</li>
+						<li class="decor-descr__filter-item">LUNA</li>
+						<li class="decor-descr__filter-item">MIKA</li>
+						<li class="decor-descr__filter-item decor-descr__filter-item--active">ДРУГИЕ</li>
+					</ul>
+				</div>
+				<div class="decor-descr__material-bg decor-descr__material-bg--gray">
+					<div class="decor-descr__material">
+						<div class="container">
+							<h3 class="decor-descr__material-name decor-descr__material-name--gold">все</h3>
+							<div class="decor-descr__material-grid">
+								<div class="decor-descr__material-item">
+									<img src="img/decor/arpa/item-1.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">ARPA 4512 ALEVE</p>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/arpa/item-2.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">ARPA 4512 ALEVE</p>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/arpa/item-3.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">ARPA 4512 ALEVE</p>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/arpa/item-4.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">ARPA 4512 ALEVE</p>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/arpa/item-5.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">ARPA 4512 ALEVE</p>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/arpa/item-6.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">ARPA 4512 ALEVE</p>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/arpa/item-7.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">ARPA 4512 ALEVE</p>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/arpa/item-8.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">ARPA 4512 ALEVE</p>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/arpa/item-9.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">ARPA 4512 ALEVE</p>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/arpa/item-10.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">ARPA 4512 ALEVE</p>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/arpa/item-11.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">ARPA 4512 ALEVE</p>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/arpa/item-12.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">ARPA 4512 ALEVE</p>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/arpa/item-13.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">ARPA 4512 ALEVE</p>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/arpa/item-14.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">ARPA 4512 ALEVE</p>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/arpa/item-15.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">ARPA 4512 ALEVE</p>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/arpa/item-16.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">ARPA 4512 ALEVE</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> -->
+			<!-- <div class="decor-descr__item decor-descr__item--marshall">
+				<div class="container">
+					<div class="decor-descr__text">Пластиковые фасады — новый подход в интерьерном дизайне! На нашем сайте вы найдёте наиболее полный каталог пластика для кухни.
+						<p>
+							Кухни из пластика давно завоевали любовь домохозяек благодаря своей практичности: они обеспечивают покрытие МДФ-плиты, которое устойчиво к воздействию влаги и повышенных
+							температур. При этом такое покрытие обладает невероятной простотой в уходе: при его очистке достаточно лишь использовать влажную тряпку, которая легко удалит любые пятна
+							и загрязнения. В результате кухни из пластика на заказ надолго сохраняют свой аккуратный и ухоженный внешний вид без особых усилий и затрат со стороны ее владелицы.
+							Образцы декоров Пластика Вы можете увидеть в нашем каталоге, но стоит учитывать, что фото цветов Пластика могут несколько отличаться от реального оттенка из-за
+							особенностей цветопередачи монитора и других причин, поэтому окончательный выбор лучше делать, увидев образцы пластика «вживую».
+						</p>
+
+					</div>
+					<ul class="decor-descr__filter">
+						<li class="decor-descr__filter-item decor-descr__filter-item--active">Все</li>
+						<li class="decor-descr__filter-item">ОДНОТОННЫЕ</li>
+						<li class="decor-descr__filter-item">ТЕКСТУРНЫЕ</li>
+						<li class="decor-descr__filter-item">ДРЕВЕСНЫЕ</li>
+					</ul>
+				</div>
+				<div class="decor-descr__material-bg decor-descr__material-bg--gray">
+					<div class="decor-descr__material">
+						<div class="container">
+							<h3 class="decor-descr__material-name decor-descr__material-name--gold">все</h3>
+							<div class="decor-descr__material-grid">
+								<div class="decor-descr__material-item">
+									<img src="img/decor/marshall/item-1.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">400SPG </p>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/marshall/item-2.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">400SPG </p>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/marshall/item-3.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">400SPG </p>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/marshall/item-4.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">400SPG </p>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/marshall/item-5.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">400SPG </p>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/marshall/item-6.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">400SPG </p>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/marshall/item-7.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">400SPG </p>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/marshall/item-8.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">400SPG </p>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/marshall/item-9.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">400SPG </p>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/marshall/item-10.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">400SPG </p>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/marshall/item-11.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">400SPG </p>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/marshall/item-12.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">400SPG </p>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/marshall/item-13.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">400SPG </p>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/marshall/item-14.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">400SPG </p>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/marshall/item-15.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">400SPG </p>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/marshall/item-16.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">400SPG </p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> -->
+			<div class="decor-descr__item decor-descr__item--stol">
+				<div class="container">
+					<div class="decor-descr__text">Пластиковые столешницы для кухни для многих являются наиболее оптимальным вариантом как с точки зрения эстетичности и функциональности, так и по
+						своей стоимости. В среднем их цена в разы ниже даже самых дешевых аналогов, изготовленных из искусственного камня.
+						<p>
+							Декоративная гамма листовых пластиков в целом несоизмеримо шире, чем у готовых ламинированных столешниц. Помимо однотонных артикулов и традиционного декора, имитирующего
+							древесину или натуральный камень различных пород, предлагаются неожиданные геометрические орнаменты, анималистические принты и текстильные мотивы.
+						</p>
+
+					</div>
+					<ul class="decor-descr__filter">
+						<li class="decor-descr__filter-item decor-descr__filter-item--active">Все</li>
+						<li class="decor-descr__filter-item">КАМНИ</li>
+						<li class="decor-descr__filter-item">ФАНТАЗИЙНЫЕ</li>
+						<li class="decor-descr__filter-item">ДРЕВЕСНЫЕ</li>
+						<li class="decor-descr__filter-item">ОДНОТОННЫЕ</li>
+					</ul>
+				</div>
+				<div class="decor-descr__material-bg decor-descr__material-bg--gray">
+					<div class="decor-descr__material">
+						<div class="container">
+							<h3 class="decor-descr__material-name decor-descr__material-name--gold">все</h3>
+							<div class="decor-descr__material-grid">
+								<div class="decor-descr__material-item">
+									<img src="img/decor/stol/item-1.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">Галактика 4018 </p>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/stol/item-2.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">Галактика 4018 </p>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/stol/item-3.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">Галактика 4018 </p>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/stol/item-4.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">Галактика 4018 </p>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/stol/item-5.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">Галактика 4018 </p>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/stol/item-6.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">Галактика 4018 </p>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/stol/item-7.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">Галактика 4018 </p>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/stol/item-8.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">Галактика 4018 </p>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/stol/item-9.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">Галактика 4018 </p>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/stol/item-10.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">Галактика 4018 </p>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/stol/item-11.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">Галактика 4018 </p>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/stol/item-12.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">Галактика 4018 </p>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/stol/item-13.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">Галактика 4018 </p>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/stol/item-14.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">Галактика 4018 </p>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/stol/item-15.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">Галактика 4018 </p>
+								</div>
+								<div class="decor-descr__material-item">
+									<img src="img/decor/stol/item-16.jpg" alt="" class="decor-descr__material-img">
+									<div class="decor-descr__material-zoom"></div>
+									<p class="decor-descr__material-note">Галактика 4018 </p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="consult">
+		<div class="container">
+			<div class="consult-grid">
+				<form action="#" method="post" class="consult-form form">
+					<h2 class="consult__header"><span>Проконсультируем</span> по любым вопросам</h2>
+					<input class="consult-form__input form__input" type="text" name="user_name" id="consult_user_name" placeholder="Ваше имя" required>
+					<input class="consult-form__input form__input" type="tel" name="user_tel" id="consult_user_tel" placeholder="+7(_ _ _) _ _ _-_ _ - _ _ " required>
+					<textarea class="consult-form__textarea form__textarea form__input" name="user_message" id="cosult_user_message" cols="30" rows="10"
+						placeholder="Кратко опишите Ваш вопрос"></textarea>
+					<input type="submit" value="Получить консультацию" class="btn btn--primary">
+					<p class="consult-form__confedencial confedencial">Нажимая кнопку "Получить консультацию" вы даете согласие на обработку персональных данных в соответствии с политикой
+						конфиденциальности</p>
+				</form>
+				<div class="consult-img">
+					<img src="img/consult/1.png" alt="kitchen">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-grid">
+				<div class="footer-address">
+					<img src="img/logo.png" alt="logo" class="footer-address__logo">
+					<p class="footer-address__text">г. Нижневартовск,
+						ул. Индустриальная, д.7 стр. 1
+						ТЦ “ВДНХ”, 2 этаж,
+						бутик № 20а</p>
+				</div>
+				<ul class="footer-menu">
+					<li class="footer__title">Разделы :</li>
+					<li class="footer-menu__item"><a href="#">Каталог товаров</a></li>
+					<li class="footer-menu__item"><a href="#">Кухонные модули</a></li>
+					<li class="footer-menu__item"><a href="#">Декоры МДФ/Лдсп</a></li>
+					<li class="footer-menu__item"><a href="#">Готовые решения</a></li>
+				</ul>
+				<ul class="footer-contacts">
+					<li class="footer__title">Контакты :</li>
+					<li>
+						<a href="#" class="footer-contacts__item">
+							<img src="img/icons/envelop.svg" alt="" class="footer-contacts__img">
+							<p class="footer-contacts__text">uhninv@mail.ru</p>
+						</a>
+					</li>
+
+					<li>
+						<a href="#" class="footer-contacts__item">
+							<img src="img/icons/vk.svg" alt="" class="footer-contacts__img">
+							<p class="footer-contacts__text">vk.com/kuhninv</p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="footer-contacts__item">
+							<img src="img/icons/call.svg" alt="" class="footer-contacts__img">
+							<p class="footer-contacts__text">8 (3466) 68-20-15
+							</p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="footer-contacts__item">
+							<img src="img/icons/ok.svg" alt="" class="footer-contacts__img">
+							<p class="footer-contacts__text">ok.ru/kuhninv</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+
+	<!--Modal-->
+	<!-- <div class="modal modal--callback">
+		<div class="modal__overlay">
+			<div class="modal__wrapper">
+				<a class="modal__close" href="#">&times;</a>
+				<h2 class="modal-header">Заказать звонок</h2>
+				<div class="modal-subtitle">
+					<img src="img/icons/call.svg" alt="" class="modal-subtitle__img">
+					<p class="modal-subtitle__text">Вы можете задать любой интересующий Вас вопрос, уточнить цены, вызвать замерщика, проконсультироваться о продукции.</p>
+				</div>
+				<form class="modal-form form" action="mail.php" method="POST">
+					<div class="modal-form__wrap">
+						<input class="form__input modal__input" required type="text" name="user_name" id="modal-callback_user_name" placeholder="Ваше имя">
+						<input class="modal__input form__input" type="tel" name="user_tel" id="modal-callback_user_tel" placeholder="+7(_ _ _) _ _ _-_ _ - _ _ " required>
+						<input type="submit" class="btn modal__btn btn--primary" value="Позвоните мне">
+						<p class="consult-form__confedencial confedencial">Нажимая кнопку “Позвоните мне”, вы соглашаетесь с условиями
+							Политики конфиденциальности</p>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div> -->
+	<div class="modal modal--calc">
+		<div class="modal__overlay">
+			<div class="modal__wrapper">
+				<p class="modal__close" href="#">&times;</p>
+				<h2 class="modal-header">Рассчитать стоимость</h2>
+				<form class="modal-form form" action="#" method="POST">
+					<div class="modal-form__wrap">
+						<input class="form__input modal__input" required type="text" name="user_name" id="modal-calc_user_name" placeholder="Ваше имя">
+						<input class="modal__input form__input" type="tel" name="user_tel" id="modal-calc_user_tel" placeholder="+7(_ _ _) _ _ _-_ _ - _ _ " required>
+						<div class="modal-calc__furniture">
+							<img src="img/furniture/ldsp.jpg" alt="" class="modal-cal__img">
+							<p class="modal-calc__text">Кухни из лдсп</p>
+						</div>
+						<input type="submit" class="btn modal__btn btn--primary" value="Позвоните мне">
+					</div>
+				</form>
+				<p class="card-policy policy">Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и
+					соглашаетесь с <a href="#">Политикой конфиденциальности</a> </p>
+			</div>
+		</div>
+	</div>
+	<div class="modal-thanks" style="display:none">
+		<div class="modal__overlay">
+			<div class="modal__wrapper gradient">
+				<a class="modal__close" href="#">&times;</a>
+				<h2 class="modal-thanks__header"></h2>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/main.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+	<script>
+		new Splide('.splide', {
+			type: 'loop',
+			perPage: 3,
+			pagination: false,
+			gap: 30,
+			classes: {
+				arrow: 'splide__arrow slider__arrow',
+				prev: 'splide__arrow--prev slider__arrow--prev',
+				next: 'splide__arrow--next slider__arrow--next'
+			},
+			breakpoints: {
+				768: {
+					perPage: 2,
+				},
+				480: {
+					perPage: 1,
+				}
+			}
+		}).mount();
+	</script>
+</body>
+
+</html>

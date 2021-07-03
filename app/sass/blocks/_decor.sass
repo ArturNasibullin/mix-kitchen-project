@@ -1,0 +1,112 @@
+.decor
+	&-tabs
+		background: #F4F4F4
+		border: 1px solid $colors--green
+		border-radius: 30px
+		padding: 5px !important
+		display: flex
+		flex-flow: row wrap
+		justify-content: space-between
+		align-items: center
+		&__item
+			color: #9B9B9B
+			font-weight: $font-weight--semi-bold
+			font-size: 1.6rem
+			line-height: 20px
+			text-align: center
+			text-transform: uppercase
+			padding: 8px
+			cursor: pointer
+			max-width: 170px
+			&--active
+				color: #FFFFFF
+				background: $colors--green
+				border-radius: 30px
+	&-descr
+		&__item
+		&__text
+			text-align: justify
+			margin: 50px 0
+			font-size: 1.8rem
+			line-height: 30px
+			color: #000000
+			p
+				margin-top: 15px
+		&__filter
+			display: grid
+			grid-template-columns: repeat(6, 1fr)
+			grid-template-rows: minmax(max-content, 50px)
+			grid-row-gap: 10px
+			justify-content: space-between
+			align-items: center
+			text-align: center
+			&-item
+				font-weight: $font-weight--regular
+				padding: 8px
+				font-size: 1.6rem
+				line-height: 30px
+				color: $colors--text
+				cursor: pointer
+				transition: all .3s
+				&--active
+					background: #FBD846
+					border-radius: 30px
+					font-weight: $font-weight--semi-bold
+		&__material
+			&-bg
+				margin-top: 50px
+				padding-bottom: 70px
+				&--gray
+					background-color: $colors--text
+				&--yellow
+					margin-top: 0
+					background-color: $colors--primary
+				&--white
+					margin-top: 0
+					background-color: #fff
+			&-name
+				margin: 50px 0 60px
+				font-weight: $font-weight--bold
+				font-size: 2.4rem
+				line-height: 29px
+				text-align: center
+				text-transform: uppercase
+				&--gold
+					color: #FBD846
+				&--black
+					color: $colors--text
+			&-grid
+				display: grid
+				grid-template: repeat(4, 1fr)/ repeat(4, 1fr)
+				grid-gap: 30px
+			&-item
+				position: relative
+			&-zoom
+				position: absolute
+				background-color: rgba(51, 51, 51, 0.8)
+				bottom: 40px
+				right: 15px
+				width: 30px
+				height: 30px
+				border-radius: 50%
+				display: flex
+				justify-content: center
+				align-items: center
+				cursor: pointer
+				&::after
+					content: url(../img/icons/zoom-yellow.svg)
+					width: 15px
+					height: 15px
+			&-note
+				color: #fff
+				text-align: center
+				font-size: 2rem
+				line-height: 150%
+		&-ps
+			&__title
+				text-align: left
+				padding: 30px 0
+			&__text
+				text-align: justify
+				p
+					margin-bottom: 25px

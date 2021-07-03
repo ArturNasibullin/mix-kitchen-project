@@ -2,13 +2,13 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 /* Убираем внутренние отступы */
 ul[class],
 ol[class] {
-  padding: 0;
+	padding: 0;
 }
 
 /* Убираем внешние отступы */
@@ -26,43 +26,43 @@ figcaption,
 blockquote,
 dl,
 dd {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 /* Выставляем основные настройки по-умолчанию для body */
 body {
-  scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
-  line-height: 1.2;
+	scroll-behavior: smooth;
+	text-rendering: optimizeSpeed;
+	line-height: 1.2;
 }
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
 ul[class],
 ol[class] {
-  list-style: none;
-  margin-block-start: 0px;
-  margin-block-end: 0px;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 0px;
+	list-style: none;
+	margin-block-start: 0px;
+	margin-block-end: 0px;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	padding-inline-start: 0px;
 }
 li {
-    display: inline-block;
+	display: inline-block;
 }
 /* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
 a:not([class]) {
-  text-decoration-skip-ink: auto;
+	text-decoration-skip-ink: auto;
 }
 a {
-    text-decoration: none;
-    display: inline-block;
-    color: inherit
+	text-decoration: none;
+	display: inline-block;
+	color: inherit;
 }
 /* Упрощаем работу с изображениями */
 img {
-  max-width: 100%;
-  display: block;
+	max-width: 100%;
+	display: block;
 }
 
 /* Наследуем шрифты для инпутов и кнопок */
@@ -70,15 +70,15 @@ input,
 button,
 textarea,
 select {
-  font: inherit;
+	font: inherit;
 }
 
 textarea,
 input.text,
-input[type="text"],
-input[type="button"],
-input[type="submit"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  }
+input[type='text'],
+input[type='button'],
+input[type='submit'] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
