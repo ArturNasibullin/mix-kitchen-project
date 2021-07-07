@@ -72,6 +72,7 @@ window.addEventListener('DOMContentLoaded', () => {
 		});
 	};
 
+	// Modal windows
 	let modal = () => {
 		let connectBtn = document.querySelectorAll('.modal-open');
 		connectBtn.forEach((btn) => {
@@ -103,6 +104,59 @@ window.addEventListener('DOMContentLoaded', () => {
 			}
 		});
 	};
+	// Tabs decor
+	function tabs(tabsSelector) {
+		const tabs = document.querySelectorAll(tabsSelector),
+			tabsContent = document.querySelectorAll('.decor-descr__item'),
+			tabsParent = document.querySelector('#decor-tabs');
+
+		function hideTabsContent() {
+			tabsContent.forEach((content) => {
+				content.style.display = 'none';
+			});
+
+			tabs.forEach((item) => {
+				item.classList.remove('decor-tabs__item--active');
+			});
+		}
+
+		function showTabs(i = 0) {
+			tabsContent[i].style.display = 'block';
+			tabs[i].classList.add('decor-tabs__item--active');
+		}
+
+		tabsParent.addEventListener('click', (event) => {
+			const target = event.target;
+
+			if (target && target.classList.contains(tabsSelector.slice(1))) {
+				tabs.forEach((item, i) => {
+					if (target == item) {
+						hideTabsContent();
+						showTabs(i);
+					}
+				});
+			}
+		});
+		hideTabsContent();
+		showTabs();
+	}
+
+	// accordion
+	var acc = document.querySelectorAll(".decor-descr-accordion__item");
+	var i;
+
+	for (i = 0; i < acc.length; i++) {
+		acc[i].addEventListener("click", function() {
+		  this.classList.toggle("active");
+		  var panel = this.nextElementSibling;
+		  if (panel.style.maxHeight){
+			 panel.style.maxHeight = null;
+		  } else {
+			 panel.style.maxHeight = panel.scrollHeight + "px";
+		  } 
+		});
+	 }
+	tabs('.decor-tabs__item');
 	modal();
 	menuBtn();
 	modalCalc();
@@ -137,43 +191,4 @@ window.addEventListener('DOMContentLoaded', () => {
 	// 		offset: '75%',
 	// 	});
 	// });
-
-	// Табы в блоке Services
-	// function tabs(tabsSelector) {
-	// 	const tabs = document.querySelectorAll(tabsSelector),
-	// 		tabsContent = document.querySelectorAll('.description__item'),
-	// 		tabsParent = document.querySelector('#services__tabs');
-
-	// 	function hideTabsContent() {
-	// 		tabsContent.forEach((content) => {
-	// 			content.style.display = 'none';
-	// 		});
-
-	// 		tabs.forEach((item) => {
-	// 			item.classList.remove('services__tabs-item--active');
-	// 		});
-	// 	}
-
-	// 	function showTabs(i = 0) {
-	// 		tabsContent[i].style.display = 'block';
-	// 		tabs[i].classList.add('services__tabs-item--active');
-	// 	}
-
-	// 	hideTabsContent();
-	// 	showTabs();
-
-	// 	tabsParent.addEventListener('click', (event) => {
-	// 		const target = event.target;
-
-	// 		if (target && target.classList.contains(tabsSelector.slice(1))) {
-	// 			tabs.forEach((item, i) => {
-	// 				if (target == item) {
-	// 					hideTabsContent();
-	// 					showTabs(i);
-	// 				}
-	// 			});
-	// 		}
-	// 	});
-	// }
-	// tabs('.services__tabs-item');
 });

@@ -22,6 +22,7 @@
 				color: #FFFFFF
 				background: $colors--green
 				border-radius: 30px
+				transition: color,background .6s
 	&-descr
 		&__item
 		&__text
@@ -52,8 +53,8 @@
 					background: #FBD846
 					border-radius: 30px
 					font-weight: $font-weight--semi-bold
-		&__material
-			&-bg
+		&-material
+			&__bg
 				margin-top: 50px
 				padding-bottom: 70px
 				&--gray
@@ -64,7 +65,7 @@
 				&--white
 					margin-top: 0
 					background-color: #fff
-			&-name
+			&__name
 				margin: 50px 0 60px
 				font-weight: $font-weight--bold
 				font-size: 2.4rem
@@ -75,13 +76,13 @@
 					color: #FBD846
 				&--black
 					color: $colors--text
-			&-grid
+			&__grid
 				display: grid
 				grid-template: repeat(4, 1fr)/ repeat(4, 1fr)
 				grid-gap: 30px
-			&-item
+			&__item
 				position: relative
-			&-zoom
+			&__zoom
 				position: absolute
 				background-color: rgba(51, 51, 51, 0.8)
 				bottom: 40px
@@ -97,16 +98,55 @@
 					content: url(../img/icons/zoom-yellow.svg)
 					width: 15px
 					height: 15px
-			&-note
+			&__note
 				color: #fff
 				text-align: center
 				font-size: 2rem
 				line-height: 150%
-		&-ps
-			&__title
+			&__ps
+				&-title
+					text-align: left
+					padding: 30px 0
+				&-text
+					text-align: justify
+					p
+						margin-bottom: 25px
+		&-handle
+			display: grid
+			grid-template: 100% / repeat(4, 1fr)
+			justify-content: space-between
+			margin-bottom: 60px
+		&-palette
+			&__img
+				margin: 40px auto
+		&-accordion
+			&__item
+				font-weight: $font-weight--semi-bold
+				font-size: 2.4rem
+				line-height: 29px
+				text-transform: uppercase
+				background-color: $colors--dark-gray
+				color: #fff
+				cursor: pointer
+				padding: 38px 24px
+				width: 100%
 				text-align: left
-				padding: 30px 0
-			&__text
-				text-align: justify
-				p
-					margin-bottom: 25px
+				border: 1px solid #FFFFFF
+				outline: none
+				transition: 0.4s
+				&::after
+					content: url(../img/icons/chevron.svg)
+					font-size: 13px
+					color: #777
+					float: right
+					margin-left: 5px
+					transition: all .5s
+				&.active
+					&::after
+						transform: scale(1, -1)
+
+			&__image
+				background-color: white
+				max-height: 0
+				overflow: hidden
+				transition: max-height 0.2s ease-out
