@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
+	<!-- Fonts -->
+	<link rel=" preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+	<title>Кухни МИКС</title>
+</head>
+
+
+<body>
+	<div class="yellow-line"></div>
+
+	<header class="header">
+		<div class="header__grid">
+			<div class="header-top-line__address text--small">
+				<img src="img/geotag.png" class="header-top-line__img" alt="">
+				г. Нижневартовск, ул. Индустриальная, д.7 стр. 1 ТЦ “ВДНХ”, 2 этаж, бутик № 20а
+			</div>
+			<div class="header-top-line__phone text--bold">
+				<a href="tel:+7346668-598"><img src="img/phone-icon.png" class="header-top-line__img" alt="phone-icon"></a>
+				<a href="tel:+7346668-598">+7 (3466) 68-15-98</a>
+			</div>
+			<img class="logo header__logo" src="img/logo.png" alt="">
+			<button class="burger header__nav-btn">
+				<span class="burger__span"></span>
+			</button>
+			<ul class="header__menu-list">
+				<li class="header__menu-item"><a href="catalog.html" class="header__menu-link">Каталог товаров</a></li>
+				<li class="header__menu-item"><a href="modules.html" class="header__menu-link">Кухонные модули</a></li>
+				<li class="header__menu-item"><a href="decor.html" class="header__menu-link">Декоры</a> </li>
+				<li class="header__menu-item"><a href="#" class="header__menu-link">Фотопечать</a></li>
+				<li class="header__menu-item"><a href="#" class="header__menu-link">Готовые решения</a></li>
+				<li class="header__menu-item"><a href="#" class="header__menu-link">Контакты</a></li>
+			</ul>
+			<p class="btn btn--trans modal-open header__btn" data-connect="callback">Заказать звонок</p>
+		</div>
+		<div class="header-mobile">
+			<ul class="header-mobile-menu mobile-menu">
+				<li class="header-mobile-menu__item">
+					<a href="catalog.html" class="header-mobile-menu__link">Каталог товаров</a>
+				</li>
+				<li class="header-mobile-menu__item">
+					<a href="#" class="header-mobile-menu__link">Кухонные модули</a>
+				</li>
+				<li class="header-mobile-menu__item">
+					<a href="#" class="header-mobile-menu__link">Декоры</a>
+				</li>
+				<li class="header-mobile-menu__item">
+					<a href="#" class="header-mobile-menu__link">Фотопечать</a>
+				</li>
+				<li class="header-mobile-menu__item">
+					<a href="#" class="header-mobile-menu__link">Готовые решения</a>
+				</li>
+				<li class="header-mobile-menu__item">
+					<a href="#" class="header-mobile-menu__link">Контакты</a>
+				</li>
+			</ul>
+			<div class="header-mobile-phone">
+				<img src="img/phone-icon--yellow.svg" class="header-top-line__img" alt="phone-icon">
+				<a href="tel:+7346668-598">+7 (3466) 68-15-98</a>
+			</div>
+			<a href="#" class="btn btn--trans modal-open header-mobile-btn">Заказать звонок</a>
+			<div class="header-mobile-address">
+				<img src="img/geotag--yellow.svg" class="header-top-line__img" alt="">
+				<p>
+					г. Нижневартовск, ул. Индустриальная, д.7 стр. 1 ТЦ “ВДНХ”, <br> 2 этаж, бутик № 20а
+				</p>
+			</div>
+		</div>
+
+	</header>
+
+	<main class="hero">
+		<div class="hero__wrap">
+			<div class="container">
+				<div class="hero__text">
+					<h1 class="hero__title">Кухни в Нижневартовске от производителя - <span class="text--yellow">недорого и надёжно!</span></h1>
+					<p class="hero__subtitle text">Изготовим и доставим кухонный гарнитур в Излучинск, Мегион, Стрежевой, Лангепас, Радужный и другие города ХМАО</p>
+					<ul class="hero-advantages">
+						<li class="hero-advantages__item">
+							<img src="img/hero-icons/wallet.svg" alt="" class="hero-advantages__icon">
+							<p class="hero-advantages__text">Рассрочка без
+								переплаты!</p>
+						</li>
+						<li class="hero-advantages__item">
+							<img src="img/hero-icons/ruler.svg" alt="" class="hero-advantages__icon">
+							<p class="hero-advantages__text">Бесплатный замер и дизайн проект</p>
+						</li>
+						<li class="hero-advantages__item">
+							<img src="img/hero-icons/fasad.svg" alt="" class="hero-advantages__icon">
+							<p class="hero-advantages__text">Более 500 цветов фасадов</p>
+						</li>
+						<li class="hero-advantages__item">
+							<img src="img/hero-icons/clock.svg" alt="" class="hero-advantages__icon">
+							<p class="hero-advantages__text">Соблюдение сроков изготовления
+								Если не выполним в срок – мы заплатим Вам неустойку</p>
+						</li>
+					</ul>
+					<div class="hero__more">
+						<button class="btn btn--primary hero__btn">Рассчитать стоимость</button>
+						<div class="hero-advantages__item hero-advantages__gift">
+							<img src="img/hero-icons/present.svg" alt="" class="hero-advantages__icon">
+							<p class="hero-advantages__text">Пройдите тест из 5 вопросов
+								и получите дизайн проект, и
+								расчет стоимость кухни
+								+ гарантированный подарок при заказе кухни!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<img src="img/hero-bg.png" class="hero__img" alt="">
+		</div>
+	</main>
+
+	<section class="popular" id="popular">
+		<div class="container">
+			<h2 class="popular__title title">популярные модели </h2>
+			<div class="popular-grid">
+				<a href="#" class="popular-card">
+					<img src="img/popular/card-1.jpg" alt="популярный товар-1" class="popular-card__img">
+					<div class="popular-card__text">
+						<h3 class="popular-card__name">Кухонный гарнитур “ЛОФТ”.
+							Длина 2 метра.</h3>
+						<p class="popular-card__old-price">19 899 ₽</p>
+						<p class="popular-card__new-price">14 900 ₽</p>
+						<button class="popular-card__btn">+</button>
+					</div>
+				</a>
+
+				<a href="#" class="popular-card">
+					<img src="img/popular/card-2.jpg" alt="популярный товар-2" class="popular-card__img">
+					<div class="popular-card__text">
+						<h3 class="popular-card__name">Кухонный гарнитур с фотопечатью “Орхидея”. Длина 2 метра.</h3>
+						<p class="popular-card__old-price">19 899 ₽</p>
+						<p class="popular-card__new-price">14 900 ₽</p>
+						<button class="popular-card__btn">+</button>
+					</div>
+				</a>
+				<a href="#" class="popular-card">
+					<img src="img/popular/card-3.jpg" alt="популярный товар-3" class="popular-card__img">
+					<div class="popular-card__text">
+						<h3 class="popular-card__name">Кухонный гарнитур “ЛОФТ”. Длина 2 метра.</h3>
+						<p class="popular-card__old-price">19 899 ₽</p>
+						<p class="popular-card__new-price">14 900 ₽</p>
+						<button class="popular-card__btn">+</button>
+					</div>
+				</a>
+				<a href="#" class="popular-card">
+					<img src="img/popular/card-4.jpg" alt="популярный товар-4" class="popular-card__img">
+					<div class="popular-card__text">
+						<h3 class="popular-card__name">Кухонный гарнитур “ЛОФТ”. Длина 2 метра.</h3>
+						<p class="popular-card__old-price">19 899 ₽</p>
+						<p class="popular-card__new-price">14 900 ₽</p>
+						<button class="popular-card__btn">+</button>
+					</div>
+				</a>
+				<a href="#" class="popular-card">
+					<img src="img/popular/card-5.jpg" alt="популярный товар-5" class="popular-card__img">
+					<div class="popular-card__text">
+						<h3 class="popular-card__name">Кухонный гарнитур “ЛОФТ”. Длина 2 метра.</h3>
+						<p class="popular-card__old-price">19 899 ₽</p>
+						<p class="popular-card__new-price">14 900 ₽</p>
+						<button class="popular-card__btn">+</button>
+					</div>
+				</a>
+				<a href="#" class="popular-card">
+					<img src="img/popular/card-6.jpg" alt="популярный товар-6" class="popular-card__img">
+					<div class="popular-card__text">
+						<h3 class="popular-card__name">Кухонный гарнитур “ЛОФТ”. Длина 2 метра.</h3>
+						<p class="popular-card__old-price">19 899 ₽</p>
+						<p class="popular-card__new-price">14 900 ₽</p>
+						<button class="popular-card__btn">+</button>
+					</div>
+				</a>
+			</div>
+			<button class="btn btn--green popular__show-all">Смотреть все товары</button>
+		</div>
+	</section>
+
+	<section class="kitchen">
+		<div class="container">
+			<h2 class="kitchen__title title">Выбор <span class="text--yellow">кухни по стилям</span></h2>
+			<p class="kitchen__subtitle">Красивые, удобные и современные, кухни на заказ помогают создавать атмосферу уюта и комфорта в помещении. Вы хотите воплотить в жизнь мечты об удобном
+				гарнитуре? Мы готовы вам в этом помочь.</p>
+			<div class="kitchen-tabs-grid">
+				<p class="kitchen-tabs__title">Выберите стиль:</p>
+				<ul class="kitchen-tabs">
+					<li class="kitchen-tabs__item kitchen-tabs__item--active">Эконом</li>
+					<li class="kitchen-tabs__item">Маленькие</li>
+					<li class="kitchen-tabs__item">Классика</li>
+					<li class="kitchen-tabs__item">Хай-тек</li>
+					<li class="kitchen-tabs__item">Скандинавский</li>
+					<li class="kitchen-tabs__item">Минимализм</li>
+					<li class="kitchen-tabs__item">Лофт</li>
+					<li class="kitchen-tabs__item">Прованс</li>
+				</ul>
+				<select class="kitchen-tabs__select">
+					<option>Эконом</option>
+					<option>Классика</option>
+					<option>Хай-тек</option>
+					<option>Скандинавский</option>
+					<option>Минимализм</option>
+					<option>Лофт</option>
+					<option>Прованс</option>
+				</select>
+			</div>
+			<div class="kitchen-gallery">
+				<div class="kitchen-gallery__item"><img src="img/kitchen/item-1.jpg" alt="кухня-1"></div>
+				<div class="kitchen-gallery__item"><img src="img/kitchen/item-2.jpg" alt="кухня-2"></div>
+				<div class="kitchen-gallery__item"><img src="img/kitchen/item-3.jpg" alt="кухня-3"></div>
+				<div class="kitchen-gallery__item"><img src="img/kitchen/item-4.jpg" alt="кухня-4"></div>
+				<div class="kitchen-gallery__item"><img src="img/kitchen/item-5.jpg" alt="кухня-5"></div>
+				<div class="kitchen-gallery__item"><img src="img/kitchen/item-6.jpg" alt="кухня-6"></div>
+			</div>
+		</div>
+	</section>
+
+	<div class="card card--promo">
+		<div class="container">
+			<div class="card-wrap">
+				<div class="card__text">
+					<h2 class="card__title">Есть замер или эскиз кухни, или просто нашли фото кухни в интернете которая Вам нравится?</h2>
+					<p class="card__subtitle">Отправьте его нам и мы посчитаем стоимость с учетом Ваших пожеланий!</p>
+				</div>
+				<form action="#" method="post" class="card-form">
+					<input type="text" name="user_name" id="calc_user_name" class="card-form__input" placeholder="Ваше имя" required>
+					<input type="tel" name="user_tel" id="calc_user_tel" class="card-form__input" placeholder="+7(_ _ _) _ _ _-_ _ - _ _ " required>
+					<div class="card-form-attachment">
+						<label class="card-form__file">
+							<input type="file" name="user_file" id="calc_user_file" class="card-form__file-input" multiple required>
+						</label>
+						<span class="card-form__file-title">Вы можете приложить эскиз или фото</span>
+					</div>
+					<input type="submit" class="card-form__input card-form__btn" value="Рассчитать стоимость">
+					<p class="card-form__confedencial confedencial">Нажимая кнопку “Рассчитать стоимость”, вы соглашаетесь с условиями Политики конфиденциальности</p>
+				</form>
+				<div class="card-img">
+					<img src="img/card--promo.png" alt="card--promo">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section class="quiz">
+		<div class="container">
+			<div class="quiz-header">
+				<h2 class="quiz-header__title title">Пройдите тест за 1 минуту и <span class="text--yellow">узнайте стоимость</span> вашей будущей кухни прямо сейчас</h2>
+				<div class="quiz-header__subtitle">
+					<img src="img/hero-icons/present.svg" alt="">
+					И получите один из подарков при заказе кухни.
+				</div>
+			</div>
+			<div class="quiz-main">
+				<div class="quiz-main__image"></div>
+				<div class="quiz-main__offer">
+					<div class="quiz-main__counter">
+						<span>0</span>/5
+					</div>
+					<div class="quiz-main__text">
+						<p class="quiz-main__name">Ответьте на 5 вопросов и получите дизайн проект и расчет стоимость кухни
+						</p>
+						<p class="quiz-main__subtext">+ гарантированый подарок при заказе
+							кухни!
+						</p>
+						<button class="quiz-main__btn btn">Узнать стоимость</button>
+					</div>
+				</div>
+			</div>
+			<h2 class="advantages__title title"><span class="small"><span class="text--green">Кухни Микс</span> - это :</span></h2>
+			<div class="advantages-grid">
+				<div class="advantages-card">
+					<img src="img/advantages/advantages-1.svg" alt="преимущество-1">
+					<p class="advantages-card__name">рассрочка без переплаты</p>
+					<p class="advantages-card__text">Мы не делаем наценок.
+						Наши цены заморожены с 2015 года</p>
+				</div>
+				<div class="advantages-card">
+					<img src="img/advantages/advantages-2.svg" alt="преимущество-2">
+					<p class="advantages-card__name">СКИДКИ</p>
+					<p class="advantages-card__text">При заказе кухни матовая
+						столешница 26 мм
+						- в подарок!</p>
+				</div>
+				<div class="advantages-card">
+					<img src="img/advantages/advantages-3.svg" alt="преимущество-3">
+					<p class="advantages-card__name">БОЛЕЕ 500
+						ЦВЕТОВ ФАСАДОВ</p>
+					<p class="advantages-card__text">Цветовые решения
+						на любой вкус</p>
+				</div>
+				<div class="advantages-card">
+					<img src="img/advantages/advantages-4.svg" alt="преимущество-4">
+					<p class="advantages-card__name">БЕСПЛАТНЫЙ ЗАМЕР
+						И ДИЗАЙН ПРОЕКТ</p>
+					<p class="advantages-card__text">Бесплатный дизайн проект
+						кухни за 1 день</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="furniture">
+		<div class="container">
+			<h2 class="furniture__title title">Фурнитура и <span class="text--yellow">мaтериалы</span> </h2>
+			<div class="furniture-cards">
+				<div class="furniture-cards__item">
+					<div>
+						<h3 data-id="ldsp" class="furniture-cards__header">ЛДСП</h3>
+						<img src="img/furniture/ldsp.jpg" alt="фурнитура-1" class="furniture-cards__img">
+						<div class="furniture-cards__list">
+							<p class="furniture-cards__text">- Хорошая устойчивость к температурным перепадам и высокой влажности.</p>
+							<p class="furniture-cards__text">- Большой выбор различных цветов. Как и в случае с МДФ, у ЛДСП имеется огромное разнообразие ламинированных поверхностей.</p>
+							<p class="furniture-cards__text">- Материал не деформируется в результате механических повреждений.</p>
+							<p class="furniture-cards__text">- Материал имеет хорошую устойчивость к царапинам. Кроме того, его можно чистить различными химическими средствами.</p>
+						</div>
+					</div>
+					<button class="furniture-cards__btn btn btn--primary modal-open" data-connect="calc" data-id="ldsp">Рассчитать стоимость</button>
+				</div>
+				<div class="furniture-cards__item">
+					<div>
+						<h3 data-id="mdf" class="furniture-cards__header">Мдф</h3>
+						<img src="img/furniture/mdf.jpg" alt="фурнитура-2" class="furniture-cards__img">
+						<div class="furniture-cards__list">
+							<p class="furniture-cards__text">- Широкие дизайнерские возможности. Чаще всего МДФ используют как основу, отделывая пластиком, акрилом, различными типами пленок. Это
+								позволяет создать яркие уникальные дизайны. Часто гарнитуры из МДФ имитируют натуральное дерево, камень, металл и другие материалы.</p>
+							<p class="furniture-cards__text">- Качественная мебель из МДФ может служить до 20 лет без потери свойств.</p>
+							<p class="furniture-cards__text">- МФД не капризен и не требует специальных моющих средств. Правда, необходимо учесть, что покрытие может оказаться более требовательным.
+							</p>
+						</div>
+					</div>
+					<button class="furniture-cards__btn btn btn--primary modal-open" data-connect="calc" data-id="mdf">Рассчитать стоимость</button>
+				</div>
+				<div class="furniture-cards__item">
+					<div>
+						<h3 data-id="emal" class="furniture-cards__header">Эмаль</h3>
+						<img src="img/furniture/emal.jpg" alt="фурнитура-3" class="furniture-cards__img">
+						<div class="furniture-cards__list">
+							<p class="furniture-cards__text">Все больше у покупателей становятся популярными, кухни с крашенными фасадами. Крашеные кухонные фасады изготавливают из МДФ,
+								поверхность,
+								которой покрывается эмалью. Специальная краска и финишный слой лака обеспечивают надежную защиту от влаги, загрязнений, температурных колебаний в определенных
+							</p>
+						</div>
+					</div>
+					<button class="furniture-cards__btn btn btn--primary modal-open" data-connect="calc" data-id="emal">Рассчитать стоимость</button>
+				</div>
+				<div class="furniture-cards__item">
+					<div>
+						<h3 data-id="blum" class="furniture-cards__header">фурнитура blum</h3>
+						<img src="img/furniture/blum.jpg" alt="фурнитура-4" class="furniture-cards__img">
+						<div class="furniture-cards__list">
+							<p class="furniture-cards__text">- Высококачественная австрийская фурнитура для современной мебели. <br>Фурнитура «Блюм» для кухни позволяет:</p>
+							<p class="furniture-cards__text">- создавать конструкции повышенной прочности и функциональности;</p>
+							<p class="furniture-cards__text">- превращать «мертвые» зоны в полезные;</p>
+							<p class="furniture-cards__text">- реализовывать любые дизайнерские задумки.</p>
+						</div>
+					</div>
+					<button class="furniture-cards__btn btn btn--primary modal-open" data-connect="calc" data-id='blum'>Рассчитать стоимость</button>
+				</div>
+				<div class="furniture-cards__item">
+					<div>
+						<h3 data-id="het" class="furniture-cards__header">фурнитура Hettich</h3>
+						<img src="img/furniture/hettich.png" alt="фурнитура-5" class="furniture-cards__img">
+						<div class="furniture-cards__list">
+							<p class="furniture-cards__text">– это германская фурнитура с идеальным сочетанием интеллектуальных технологий, функциональности и дизайна. </p>
+							<p class="furniture-cards__text">- мебельные петли, системы ящиков, фурнитура для складных и раздвижных дверей, подъемные механизмы, соединительная фурнитура,
+								производственная техника, механизмы и наполнение для кухонной мебели</p>
+						</div>
+					</div>
+					<button class="furniture-cards__btn btn btn--primary modal-open" data-connect="calc" data-id="het">Рассчитать стоимость</button>
+				</div>
+				<div class="furniture-cards__item">
+					<div>
+						<h3 data-id="boyard" class="furniture-cards__header">фурнитура BOYARD</h3>
+						<img src="img/furniture/boyard.png" alt="фурнитура-6" class="furniture-cards__img">
+						<div class="furniture-cards__list">
+							<p class="furniture-cards__text">Передовые технологические разработки, позволяющие выпускать качественные изделия по доступной цене. </p>
+							<p class="furniture-cards__text">Производство продукции в соответствии с международными стандартами качества. Широкий ассортимент актуальной фурнитуры для мебели и
+								интерьеров различных стилевых направлений, разнообразные по формам, размерам, типу покрытий и назначению.</p>
+						</div>
+					</div>
+					<button class="furniture-cards__btn btn btn--primary modal-open" data-connect="calc" data-id="boyard">Рассчитать стоимость</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="seo">
+		<div class="container">
+			<div class="seo-item">
+				<h3 class="seo-item__title">Кухни на заказ</h3>
+				<div class="seo-right">
+					<img src="img/seo/seo-1.jpg" alt="seo iamge" class="seo-item__img">
+					<p class="seo-item__text">Красивые, удобные и современные, кухни на заказ помогают создавать атмосферу уюта и комфорта в помещении. Вы хотите воплотить в жизнь мечты об
+						удобном
+						гарнитуре? Мы готовы вам в этом помочь. Наша компания успешно работает в Нижневартовске с 2015 года. Вся мебель изготавливается на современном оборудовании. Если вы хотите
+						купить кухню на заказ, мы предложим наиболее рациональное решение и сумеем уложиться в планируемый вами бюджет. Компания «Кухни Микс» предлагает готовую продукцию и
+						разработку
+						индивидуальных проектов кухонь. Опытные дизайнеры могут создать эксклюзивные решения для кухонных пространств любой площади и конфигурации. Мы готовы работать в рассрочку.
+						Все
+						документы оформляются официально. Хотите приобрести кухню в кредит? Мы предложим лучшие условия от банков-партнеров.</p>
+				</div>
+			</div>
+			<div class="seo-item">
+				<h3 class="seo-item__title">Условия доставки и сборки</h3>
+				<div class="seo-left">
+					<img src="img/seo/seo-2.jpg" alt="seo iamge" class="seo-item__img right">
+					<p class="seo-item__text">При покупке кухни под заказ, вы получаете не только цену от производителя, но и доставку, а также профессиональную сборку и установку гарнитура в
+						интерьере. Доставка и сборка оплачиваются отдельно, стоимость зависит от удаленности и сложности сборки.
+						Кроме того, созданные по индивидуальным размерам, модули требуют правильного размещения в пространстве. В этом случае справиться со сборкой и установкой самостоятельно
+						будет
+						довольно трудно. Обращение к специалистам дает возможность не только заказать на выгодных условиях хорошие кухни, но и смонтировать их в течение всего одного рабочего дня,
+						недорого и быстро.</p>
+				</div>
+
+			</div>
+			<div class="seo-item">
+				<h3 class="seo-item__title">Конструктор кухни онлайн
+				</h3>
+				<div class="seo-right">
+					<img src="img/seo/seo-3.jpg" alt="seo iamge" class="seo-item__img">
+					<p class="seo-item__text">Официальный сайт компании «Кухни Микс» предлагает создание онлайн-визуализации вашего будущего гарнитура. Выбирайте оптимальную комплектацию, размеры
+						и
+						другие параметры, не выходя из дома. Настраивайте цветовую гамму, расположение элементов, тип и орнамент столешницы, чтобы увидеть итоговый результат. Также на сайте есть
+						интернет-магазин с готовыми решениями. Стоимость самого бюджетного варианта будет по карману человеку практически с любым уровнем достатка. Выбирайте, и заказывайте их
+						прямо
+						на сайте.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="manufacture">
+		<div class="container">
+			<div class="manufacture-header">
+				<h2 class="manufacture__title">Производство</h2>
+			</div>
+			<div class="manufacture__wrap">
+				<div class="manufacture__item manufacture__item--gost">
+					<img src="img/manufacture/manufacture-1.png" alt="manufacture item">
+				</div>
+				<div class="manufacture__item manufacture__item--material">
+					<img src="img/manufacture/manufacture-2.png" alt="manufacture item">
+				</div>
+				<div class="manufacture__item manufacture__item--equipment">
+					<img src="img/manufacture/manufacture-3.png" alt="manufacture item">
+				</div>
+				<div class="manufacture__item manufacture__item--control">
+					<img src="img/manufacture/manufacture-4.png" alt="manufacture item">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="jobs">
+		<div class="container">
+			<h2 class="jobs__title title">Наши <span>работы</span> </h2>
+			<div class="jobs-slider splide">
+				<div class="splide__track">
+					<ul class="splide__list">
+						<li class="jobs-slider__item splide__slide"><img src="img/jobs/job-1.jpg" alt="job-1" class="jobs-slider__img"></li>
+						<li class="jobs-slider__item splide__slide"><img src="img/jobs/job-2.jpg" alt="job-2" class="jobs-slider__img"></li>
+						<li class="jobs-slider__item splide__slide"><img src="img/jobs/job-3.jpg" alt="job-3" class="jobs-slider__img"></li>
+						<li class="jobs-slider__item splide__slide"><img src="img/jobs/job-4.jpg" alt="job-4" class="jobs-slider__img"></li>
+						<li class="jobs-slider__item splide__slide"><img src="img/jobs/job-5.jpg" alt="job-5" class="jobs-slider__img"></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="consult">
+		<div class="container">
+			<div class="consult-grid">
+				<form action="#" method="post" class="consult-form form">
+					<h2 class="consult__header"><span>Проконсультируем</span> по любым вопросам</h2>
+					<input class="consult-form__input form__input" type="text" name="user_name" id="consult_user_name" placeholder="Ваше имя" required>
+					<input class="consult-form__input form__input" type="tel" name="user_tel" id="consult_user_tel" placeholder="+7(_ _ _) _ _ _-_ _ - _ _ " required>
+					<textarea class="consult-form__textarea form__textarea form__input" name="user_message" id="cosult_user_message" cols="30" rows="10"
+						placeholder="Кратко опишите Ваш вопрос"></textarea>
+					<input type="submit" value="Получить консультацию" class="btn btn--primary">
+					<p class="consult-form__confedencial confedencial">Нажимая кнопку "Получить консультацию" вы даете согласие на обработку персональных данных в соответствии с политикой
+						конфиденциальности</p>
+				</form>
+				<div class="consult-img">
+					<img src="img/consult/1.png" alt="kitchen">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-grid">
+				<div class="footer-address">
+					<img src="img/logo.png" alt="logo" class="footer-address__logo">
+					<p class="footer-address__text">г. Нижневартовск,
+						ул. Индустриальная, д.7 стр. 1
+						ТЦ “ВДНХ”, 2 этаж,
+						бутик № 20а</p>
+				</div>
+				<ul class="footer-menu">
+					<li class="footer__title">Разделы :</li>
+					<li class="footer-menu__item"><a href="#">Каталог товаров</a></li>
+					<li class="footer-menu__item"><a href="#">Кухонные модули</a></li>
+					<li class="footer-menu__item"><a href="#">Декоры МДФ/Лдсп</a></li>
+					<li class="footer-menu__item"><a href="#">Готовые решения</a></li>
+				</ul>
+				<ul class="footer-contacts">
+					<li class="footer__title">Контакты :</li>
+					<li>
+						<a href="#" class="footer-contacts__item">
+							<img src="img/icons/envelop.svg" alt="" class="footer-contacts__img">
+							<p class="footer-contacts__text">uhninv@mail.ru</p>
+						</a>
+					</li>
+
+					<li>
+						<a href="#" class="footer-contacts__item">
+							<img src="img/icons/vk.svg" alt="" class="footer-contacts__img">
+							<p class="footer-contacts__text">vk.com/kuhninv</p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="footer-contacts__item">
+							<img src="img/icons/call.svg" alt="" class="footer-contacts__img">
+							<p class="footer-contacts__text">8 (3466) 68-20-15
+							</p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="footer-contacts__item">
+							<img src="img/icons/ok.svg" alt="" class="footer-contacts__img">
+							<p class="footer-contacts__text">ok.ru/kuhninv</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+
+	<!--Modal-->
+	<!-- <div class="modal modal--callback">
+		<div class="modal__overlay">
+			<div class="modal__wrapper">
+				<a class="modal__close" href="#">&times;</a>
+				<h2 class="modal-header">Заказать звонок</h2>
+				<div class="modal-subtitle">
+					<img src="img/icons/call.svg" alt="" class="modal-subtitle__img">
+					<p class="modal-subtitle__text">Вы можете задать любой интересующий Вас вопрос, уточнить цены, вызвать замерщика, проконсультироваться о продукции.</p>
+				</div>
+				<form class="modal-form form" action="mail.php" method="POST">
+					<div class="modal-form__wrap">
+						<input class="form__input modal__input" required type="text" name="user_name" id="modal-callback_user_name" placeholder="Ваше имя">
+						<input class="modal__input form__input" type="tel" name="user_tel" id="modal-callback_user_tel" placeholder="+7(_ _ _) _ _ _-_ _ - _ _ " required>
+						<input type="submit" class="btn modal__btn btn--primary" value="Позвоните мне">
+						<p class="consult-form__confedencial confedencial">Нажимая кнопку “Позвоните мне”, вы соглашаетесь с условиями
+							Политики конфиденциальности</p>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div> -->
+	<div class="modal modal--calc">
+		<div class="modal__overlay">
+			<div class="modal__wrapper">
+				<p class="modal__close" href="#">&times;</p>
+				<h2 class="modal-header">Рассчитать стоимость</h2>
+				<form class="modal-form form" action="#" method="POST">
+					<div class="modal-form__wrap">
+						<input class="form__input modal__input" required type="text" name="user_name" id="modal-calc_user_name" placeholder="Ваше имя">
+						<input class="modal__input form__input" type="tel" name="user_tel" id="modal-calc_user_tel" placeholder="+7(_ _ _) _ _ _-_ _ - _ _ " required>
+						<div class="modal-calc__furniture">
+							<img src="img/furniture/ldsp.jpg" alt="" class="modal-cal__img">
+							<p class="modal-calc__text">Кухни из лдсп</p>
+						</div>
+						<input type="submit" class="btn modal__btn btn--primary" value="Позвоните мне">
+					</div>
+				</form>
+				<p class="card-policy policy">Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и
+					соглашаетесь с <a href="#">Политикой конфиденциальности</a> </p>
+			</div>
+		</div>
+	</div>
+	<div class="modal-thanks" style="display:none">
+		<div class="modal__overlay">
+			<div class="modal__wrapper gradient">
+				<a class="modal__close" href="#">&times;</a>
+				<h2 class="modal-thanks__header"></h2>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/main.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+	<script>
+		new Splide('.splide', {
+			type: 'loop',
+			perPage: 3,
+			pagination: false,
+			gap: 30,
+			classes: {
+				arrow: 'splide__arrow slider__arrow',
+				prev: 'splide__arrow--prev slider__arrow--prev',
+				next: 'splide__arrow--next slider__arrow--next'
+			},
+			breakpoints: {
+				768: {
+					perPage: 2,
+				},
+				480: {
+					perPage: 1,
+				}
+			}
+		}).mount();
+	</script>
+</body>
+
+</html>
